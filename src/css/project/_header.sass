@@ -1,0 +1,105 @@
+.header
+  border-bottom: 1px solid $light-grey-color
+  background-color: #fff
+  left: 0
+  position: fixed
+  padding-top: 17px
+  padding-bottom: 17px
+  right: 0
+  top: 0
+  z-index: 10
+
+  @media(min-width: 768px)
+    padding-top: 25px
+    padding-bottom: 24px
+
+  &__inner
+    align-items: center
+    display: flex
+
+  &__logo
+    min-width: 128px
+    width: 128px
+
+    @media(min-width: 768px)
+      min-width: 160px
+      width: 160px
+
+  &__menu-opener
+    margin-left: auto
+
+    @media(min-width: 768px)
+      margin-left: 50px
+      margin-right: 50px
+
+    @media(min-width: 1200px) and (max-width: 1350px)
+      margin-left: 25px
+      margin-right: 25px
+
+    @media(min-width: 1350px)
+      margin-left: 70px
+      margin-right: 70px
+
+  &__dropdown
+    display: none
+
+    &.is-open
+      display: flex
+
+  &__menu
+    display: none
+
+    @media(min-width: 1200px)
+      display: block
+
+  &__social
+    display: none
+    margin-left: auto
+    margin-right: 40px
+
+    @media(min-width: 768px)
+      display: block
+
+    @media(min-width: 1200px) and (max-width: 1350px)
+      margin-right: 25px
+
+  &__button
+    display: none
+
+    @media(min-width: 768px)
+      display: inline-block
+
+  .social-block__link
+    height: 26px
+    width: 26px
+
+.header-menu
+  align-items: center
+  display: flex
+  font-size: 14px
+  font-weight: 600
+  line-height: 1.28571
+  list-style: none
+  margin: 0
+  padding: 0
+  text-transform: uppercase
+
+  @media(min-width: 1200px) and (max-width: 1350px)
+    font-size: 12px
+
+  &__item
+    &:not(:last-child)
+      margin-right: 50px
+
+      @media(min-width: 1200px) and (max-width: 1450px)
+        margin-right: 25px
+
+  &__link
+    color: $text-color
+    padding-top: 16px
+    padding-bottom: 16px
+    text-decoration: none
+
+    &:hover,
+    &:focus
+      text-decoration: underline

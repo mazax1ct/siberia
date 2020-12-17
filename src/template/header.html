@@ -1,0 +1,166 @@
+<header class="header">
+  <div class="header__inner container">
+    <a class="header__logo" href="main.html"><img src="images/logo.svg" alt="Санаторий Сибирь"></a>
+    <button class="js-menu-opener header__menu-opener menu-opener" type="button" title="Меню">
+      <svg class="menu-opener__icon"><use xlink:href="#burger"></use></svg>
+      <span class="menu-opener__text">Меню</span>
+    </button>
+    <div class="header__dropdown main-menu">
+      <div class="main-menu__inner">
+        <div class="main-menu__top">
+          <button class="main-menu__location" type="button">
+            <svg class="main-menu__location-icon"><use xlink:href="#pin"></use></svg>
+            <span class="main-menu__location-text">Петропавловск-Камчатский</span>
+          </button>
+          <div class="main-menu__lang">
+            <div class="lang">
+              <button class="js-lang lang__button" type="button">RU <svg class="lang__button-icon"><use xlink:href="#arrow_down"></use></svg></button>
+              <div class="lang__dropdown">
+                <ul class="lang__list">
+                  <li class="lang__list-item"><a class="lang__list-link" href="#">ENG</a></li>
+                  <li class="lang__list-item"><a class="lang__list-link" href="#">FR</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+          <a class="main-menu__phone" href="tel:+73452687000">+7 (3452) 687-000</a>
+          <button class="main-menu__recall" type="button">Перезвонить?</button>
+          <button class="js-menu-closer main-menu__closer" type="button" title="Закрыть меню"><svg class="main-menu__closer-icon"><use xlink:href="#close"></use></svg></button>
+        </div>
+        <nav class="main-menu__nav" role="navigation" aria-label="Основное меню">
+          <ul class="main-menu__list">
+            <li class="main-menu__list-item main-menu__list-item--root" aria-haspopup="true">
+              <a class="main-menu__list-link" href="#">Проживание</a>
+              <button class="js-menu-lvl2 main-menu__button" type="button" title="Открыть меню второго уровня"><svg class="main-menu__button-icon"><use xlink:href="#arrow_right"></use></svg></button>
+              <div class="main-menu__dropdown" aria-label="submenu">
+                <button class="js-menu-lvl2-close main-menu__dropdown-closer" type="button"><svg class="main-menu__dropdown-closer-icon"><use xlink:href="#arrow_left"></use></svg> Проживание</button>
+                <ul class="main-menu__list2">
+                  <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Корпус №1</a></li>
+                  <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Корпус №2</a></li>
+                  <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Коттеджи</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="main-menu__list-item main-menu__list-item--root" aria-haspopup="true">
+              <a class="main-menu__list-link" href="#">Отдых</a>
+              <button class="js-menu-lvl2 main-menu__button" type="button" title="Открыть меню второго уровня"><svg class="main-menu__button-icon"><use xlink:href="#arrow_right"></use></svg></button>
+              <div class="main-menu__dropdown" aria-label="submenu">
+                <button class="js-menu-lvl2-close main-menu__dropdown-closer" type="button"><svg class="main-menu__dropdown-closer-icon"><use xlink:href="#arrow_left"></use></svg> Отдых</button>
+                <ul class="main-menu__list2">
+                  <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">SPA - центр</a></li>
+                  <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Афиша</a></li>
+                  <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Салон красоты</a></li>
+                  <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Бары и рестораны</a></li>
+                  <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Детям</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="main-menu__list-item main-menu__list-item--root" aria-haspopup="true">
+              <a class="main-menu__list-link" href="#">Мед центр</a>
+              <button class="js-menu-lvl2 main-menu__button" type="button" title="Открыть меню второго уровня"><svg class="main-menu__button-icon"><use xlink:href="#arrow_right"></use></svg></button>
+              <div class="main-menu__dropdown" aria-label="submenu">
+                <button class="js-menu-lvl2-close main-menu__dropdown-closer" type="button"><svg class="main-menu__dropdown-closer-icon"><use xlink:href="#arrow_left"></use></svg> Мед центр</button>
+                <ul class="main-menu__list2">
+                  <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Мед программы</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="main-menu__list-item main-menu__list-item--indent"><a class="main-menu__list-link" href="#">Цены</a></li>
+            <li class="main-menu__list-item"><a class="main-menu__list-link" href="#">Афиша</a></li>
+            <li class="main-menu__list-item"><a class="main-menu__list-link" href="#">SPA - центр</a></li>
+            <li class="main-menu__list-item"><a class="main-menu__list-link" href="#">Косметология</a></li>
+            <li class="main-menu__list-item"><a class="main-menu__list-link" href="#">Бары и рестораны</a></li>
+            <li class="main-menu__list-item"><a class="main-menu__list-link" href="#">Спорт</a></li>
+            <li class="main-menu__list-item main-menu__list-item--indent"><a class="main-menu__list-link" href="#">Детям</a></li>
+            <li class="main-menu__list-item main-menu__list-item--root" aria-haspopup="true">
+              <a class="main-menu__list-link" href="#">О комплексе</a>
+              <button class="js-menu-lvl2 main-menu__button" type="button" title="Открыть меню второго уровня"><svg class="main-menu__button-icon"><use xlink:href="#arrow_right"></use></svg></button>
+              <div class="main-menu__dropdown" aria-label="submenu">
+                <button class="js-menu-lvl2-close main-menu__dropdown-closer" type="button"><svg class="main-menu__dropdown-closer-icon"><use xlink:href="#arrow_left"></use></svg> О комплексе</button>
+                <ul class="main-menu__list2">
+                  <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Корпус №1</a></li>
+                  <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Корпус №2</a></li>
+                  <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Коттеджи</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="main-menu__list-item"><a class="main-menu__list-link" href="#">Партнерам</a></li>
+            <li class="main-menu__list-item main-menu__list-item--root" aria-haspopup="true">
+              <a class="main-menu__list-link" href="#">Посетителям</a>
+              <button class="js-menu-lvl2 main-menu__button" type="button" title="Открыть меню второго уровня"><svg class="main-menu__button-icon"><use xlink:href="#arrow_right"></use></svg></button>
+              <div class="main-menu__dropdown" aria-label="submenu">
+                <button class="js-menu-lvl2-close main-menu__dropdown-closer" type="button"><svg class="main-menu__dropdown-closer-icon"><use xlink:href="#arrow_left"></use></svg> Посетителям</button>
+                <ul class="main-menu__list2">
+                  <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Спецпредложения</a></li>
+                  <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Для прессы</a></li>
+                  <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Конференс зал</a></li>
+                  <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Вопросы - ответы</a></li>
+                  <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Обратная связь</a></li>
+                  <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Веб - камеры</a></li>
+                  <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Виртуальная экскурсия</a></li>
+                  <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Сертификаты и лицензии</a></li>
+                  <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Реквизиты</a></li>
+                  <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Важная информация</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="main-menu__bottom">
+          <div class="social-block">
+            <p class="social-block__title">Мы в месенджерах</p>
+            <div class="social-block__list">
+              <a class="social-block__link" href="#" target="_blank" rel="nofollow noreferrer" title="Telegram">
+                <img width="30" height="30" src="images/icons/socials/telegram.svg" alt="Telegram">
+              </a>
+              <a class="social-block__link" href="#" target="_blank" rel="nofollow noreferrer" title="Viber">
+                <img width="30" height="30" src="images/icons/socials/viber.svg" alt="Viber">
+              </a>
+              <a class="social-block__link" href="#" target="_blank" rel="nofollow noreferrer" title="WhatsApp">
+                <img width="30" height="30" src="images/icons/socials/whatsapp.svg" alt="WhatsApp">
+              </a>
+            </div>
+          </div>
+          <div class="social-block">
+            <p class="social-block__title">Мы в соцсетях</p>
+            <div class="social-block__list">
+              <a class="social-block__link" href="#" target="_blank" rel="nofollow noreferrer" title="Facebook">
+                <img width="30" height="30" src="images/icons/socials/facebook.svg" alt="Facebook">
+              </a>
+              <a class="social-block__link" href="#" target="_blank" rel="nofollow noreferrer" title="Instagram">
+                <img width="30" height="30" src="images/icons/socials/instagram.svg" alt="Instagram">
+              </a>
+              <a class="social-block__link" href="#" target="_blank" rel="nofollow noreferrer" title="YouTube">
+                <img width="30" height="30" src="images/icons/socials/youtube.svg" alt="YouTube">
+              </a>
+            </div>
+          </div>
+          <button class="button" type="button">Забронировать</button>
+        </div>
+      </div>
+    </div>
+    <div class="header__menu">
+      <ul class="header-menu">
+        <li class="header-menu__item"><a class="header-menu__link" href="#">мед программы</a></li>
+        <li class="header-menu__item"><a class="header-menu__link" href="#">Проживание</a></li>
+        <li class="header-menu__item"><a class="header-menu__link" href="#">инфраструктура</a></li>
+        <li class="header-menu__item"><a class="header-menu__link" href="#">цена</a></li>
+      </ul>
+    </div>
+    <div class="header__social social-block">
+      <div class="social-block__list">
+        <a class="social-block__link" href="#" target="_blank" rel="nofollow noreferrer" title="Telegram">
+          <img width="30" height="30" src="images/icons/socials/telegram.svg" alt="Telegram">
+        </a>
+        <a class="social-block__link" href="#" target="_blank" rel="nofollow noreferrer" title="Viber">
+          <img width="30" height="30" src="images/icons/socials/viber.svg" alt="Viber">
+        </a>
+        <a class="social-block__link" href="#" target="_blank" rel="nofollow noreferrer" title="WhatsApp">
+          <img width="30" height="30" src="images/icons/socials/whatsapp.svg" alt="WhatsApp">
+        </a>
+      </div>
+    </div>
+    <button class="header__button button" type="button">Забронировать</button>
+  </div>
+</header>
