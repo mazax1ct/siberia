@@ -1,0 +1,59 @@
+.features
+  display: flex
+  flex-wrap: wrap
+  font-size: 16px
+  font-weight: 500
+  justify-content: center
+  line-height: 1.375
+  list-style: none
+  margin-bottom: 60px
+  padding: 0
+
+  @media(min-width: 992px) and (max-width: 1199px)
+    font-size: 14px
+
+  @media(min-width: 600px)
+    margin-left: -15px
+    margin-right: -15px
+
+  @media(min-width: 1200px)
+    margin-bottom: 90px
+    margin-left: -20px
+    margin-right: -20px
+
+  &__item
+    margin-bottom: 15px
+    width: 100%
+
+    @media(min-width: 600px)
+      margin-bottom: 30px
+      padding-left: 15px
+      padding-right: 15px
+      width: 50%
+
+    @media(min-width: 992px)
+      margin-bottom: 0
+      width: 25%
+
+    @media(min-width: 1200px)
+      padding-left: 20px
+      padding-right: 20px
+
+  &__feature
+    align-items: center
+    border: 1px solid $light-grey-color
+    display: flex
+    flex-direction: column
+    justify-content: center
+    min-height: 176px
+    max-width: 350px
+    margin-left: auto
+    margin-right: auto
+    text-align: center
+    width: 100%
+
+    img
+      margin-bottom: 25px
+
+    p
+      margin-bottom: 0
