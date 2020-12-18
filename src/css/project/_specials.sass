@@ -53,10 +53,13 @@
         width: 66.66666%
 
   &__item
-    margin-bottom: 20px
+    &:not(:last-child)
+      margin-bottom: 20px
+
+      @media(min-width: 600px)
+        margin-bottom: 30px
 
     @media(min-width: 600px)
-      margin-bottom: 30px
       padding-left: 15px
       padding-right: 15px
 
@@ -132,6 +135,9 @@
 
     &:hover,
     &:focus
+      .specials-list__item-title
+        text-decoration: underline
+        
       .specials-list__item-image
         transform: scale(1.02)
 

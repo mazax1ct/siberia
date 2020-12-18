@@ -21,6 +21,7 @@
   &:focus,
   &:active
     background-color: darken($main-color, 10%)
+    border-color: darken($main-color, 10%)
     color: #fff
 
   &:focus
@@ -33,3 +34,14 @@
 
     &:focus
       outline: none
+
+  &--type_2
+    background-color: $text-color
+    border-color: $text-color
+
+    &:hover,
+    &:focus,
+    &:active
+      background-color: lighten($text-color, 10%)
+      border-color: lighten($text-color, 10%)
+      color: #fff

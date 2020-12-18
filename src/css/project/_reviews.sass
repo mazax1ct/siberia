@@ -1,0 +1,181 @@
+.reviews
+  margin-bottom: 60px
+
+  @media(min-width: 1900px)
+    margin-bottom: 90px
+
+  h2
+    text-transform: uppercase
+
+  &__text
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 25px
+    max-width: 1070px
+    text-align: center
+
+    @media(min-width: 1200px)
+      margin-bottom: 60px
+
+  &__container
+    @media(min-width: 768px)
+      display: flex
+
+  &__nav
+    margin-bottom: 30px
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+      min-width: 300px
+      margin-right: 40px
+      width: 300px
+
+    @media(min-width: 1200px)
+      margin-right: 60px
+
+    @media(min-width: 1900px)
+      margin-right: 160px
+      min-width: 490px
+      width: 490px
+
+  &__slider
+    @media(min-width: 768px)
+      flex-grow: 1
+      width: calc(100% - 340px)
+
+    @media(min-width: 1200px)
+      width: calc(100% - 360px)
+
+    @media(min-width: 1900px)
+      width: calc(100% - 650px)
+
+.reviews-nav
+  padding-left: 40px
+  padding-right: 40px
+
+  @media(min-width: 768px)
+    padding-left: 0
+    padding-right: 0
+
+  &.slick-vertical
+    padding-top: 40px
+    padding-bottom: 40px
+
+    .slick-prev,
+    .slick-next
+      left: 50%
+      transform: translateX(-50%)
+
+    .slick-prev
+      top: 0
+
+    .slick-next
+      bottom: 0
+      top: auto
+
+    .reviews-nav__slide
+      padding-top: 10px
+      padding-bottom: 10px
+
+  &__slide
+    &.slick-current
+      .reviews-nav__item
+        @media(min-width: 768px)
+          background-color: $main-color
+          border-color: $main-color
+          color: #fff
+          cursor: default
+          font-weight: 600
+
+  &__item
+    align-items: center
+    background-color: $main-color
+    border: 1px solid $main-color
+    color: #fff
+    font-size: 16px
+    display: flex
+    font-weight: 600
+    justify-content: center
+    height: 60px
+    line-height: 1.625
+    margin-left: auto
+    margin-right: auto
+    text-align: center
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, font-weight 0.3s
+    width: 100%
+
+    @media(min-width: 768px)
+      border-color: #bcbdc1
+      background-color: transparent
+      color: $text-color
+      cursor: pointer
+      font-weight: 400
+
+    @media(min-width: 1900px)
+      font-size: 18px
+      line-height: 1.44444
+      height: 90px
+
+.review
+  &__title
+    font-size: 16px
+    font-weight: 700
+    line-height: 1.625
+    margin-bottom: 10px
+    text-align: center
+
+    @media(min-width: 768px)
+      text-align: left
+
+    @media(min-width: 1900px)
+      font-size: 18px
+      line-height: 1.55555
+      margin-bottom: 15px
+
+  &__rating
+    align-items: center
+    display: flex
+    justify-content: center
+    margin-bottom: 25px
+
+    @media(min-width: 768px)
+      justify-content: flex-start
+
+    @media(min-width: 1900px)
+      margin-bottom: 45px
+
+  &__rating-icon
+    fill: $light-grey-color
+    height: 20px
+    margin-right: 7px
+    width: 20px
+
+    &--fill
+      fill: $secondary-color
+
+  &__text
+    &:not(:last-child)
+      margin-bottom: 25px
+
+      @media(min-width: 1900px)
+        margin-bottom: 45px
+
+  &__features
+    @media(min-width: 600px)
+      display: flex
+      margin-left: -15px
+      margin-right: -15px
+
+    P
+      margin-bottom: 5px
+
+    ul
+      list-style: none
+      margin: 0
+      padding: 0
+
+  &__features-block
+    @media(min-width: 600px)
+      padding-left: 15px
+      padding-right: 15px
+      width: 50%

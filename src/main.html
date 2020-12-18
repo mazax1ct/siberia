@@ -51,6 +51,20 @@
         </li>
       </ul>
 
+      <div class="incut">
+        <div class="incut__image">
+          <picture>
+            <source srcset="images/content/incut/desktop/plan.png, images/content/incut/desktop/plan.png 2x" media="(min-width: 767px)">
+            <img srcset="images/content/incut/mobile/plan.png, images/content/incut/mobile/plan@2x.png 2x" alt="alt">
+          </picture>
+        </div>
+        <div class="incut__text-block">
+          <h2 class="incut__title">ГОТОВЫ</h2>
+          <p class="incut__text">забронировать путевку?</p>
+          <button class="incut__button button button--type_2" type="button">Забронировать</button>
+        </div>
+      </div>
+
       <section class="specials">
         <h2 class="text-center">Специальные события и предложения</h2>
         <div class="specials__text">
@@ -61,6 +75,7 @@
             <a class="specials-list__item-link" href="#">
               <picture>
                 <source srcset="images/content/specials/desktop/horse.jpg, images/content/specials/desktop/horse.jpg 2x" media="(min-width: 992px)">
+                <source srcset="images/content/specials/mobile/horse_goriz.jpg, images/content/specials/mobile/horse_goriz.jpg 2x" media="(min-width: 768px)">
                 <img class="specials-list__item-image" srcset="images/content/specials/mobile/horse.jpg, images/content/specials/mobile/horse@2x.jpg 2x" alt="alt">
               </picture>
               <span class="specials-list__item-title">Прогулка на лошадях</span>
@@ -156,7 +171,7 @@
         <ul class="staff-list">
           <li class="staff-list__item">
             <div class="staff">
-              <img srcset="images/content/ph/ph_1.jpg, images/content/ph/ph_1@2x.jpg 2x" alt="alt">
+              <img srcset="images/content/staff/gornichnaya.jpg, images/content/staff/gornichnaya@2x.jpg 2x" alt="alt">
               <p class="staff__name">Орлова Анастасия</p>
               <p class="staff__position"><img width="20" height="20" src="images/icons/comfort/gorn.svg" alt=""> Горничная</p>
               <p class="staff__experience">Опыт работы - более 5 лет</p>
@@ -165,16 +180,16 @@
           </li>
           <li class="staff-list__item">
             <div class="staff">
-              <img srcset="images/content/ph/ph_2.jpg, images/content/ph/ph_2@2x.jpg 2x" alt="alt">
+              <img srcset="images/content/staff/ludmila_povar.jpg, images/content/staff/ludmila_povar@2x.jpg 2x" alt="alt">
               <p class="staff__name">Людмила Иванова</p>
-              <p class="staff__position"><img width="20" height="20" src="images/icons/comfort/gorn.svg" alt=""> Повар</p>
+              <p class="staff__position"><img width="20" height="20" src="images/icons/comfort/povar.svg" alt=""> Повар</p>
               <p class="staff__experience">Опыт работы - более 3 лет</p>
               <p class="staff__text">Мне так нравится, что я могу петь песни на работе. Я искренне радуюсь, когда у меня получается найти подход к новому клиенту, и всё проходит гладко.</p>
             </div>
           </li>
           <li class="staff-list__item">
             <div class="staff">
-              <img srcset="images/content/ph/ph_3.jpg, images/content/ph/ph_3@2x.jpg 2x" alt="alt">
+              <img srcset="images/content/staff/sergei.jpg, images/content/staff/sergei@2x.jpg 2x" alt="alt">
               <p class="staff__name">Смелый Сергей</p>
               <p class="staff__position"><img width="20" height="20" src="images/icons/comfort/stethoscope_.svg" alt=""> Врач</p>
               <p class="staff__experience">Опыт работы - более 7 лет</p>
@@ -223,6 +238,183 @@
         </ul>
       </section>
 
+      <section class="reviews">
+        <h2 class="text-center">Отзывы</h2>
+        <div class="reviews__text">
+          <p>Мы рады делится с вами отзывами наших гостей. Мы делаем все, чтобы все, кто посещают наш санаторий оставались довольными на все 100%.</p>
+        </div>
+        <div class="reviews__container">
+          <div class="reviews__nav">
+            <div class="js-reviews-nav reviews-nav">
+              <div class="reviews-nav__slide">
+                <p class="reviews-nav__item">Дмитрий Тулубаев</p>
+              </div>
+              <div class="reviews-nav__slide">
+                <p class="reviews-nav__item">Максим Халилов</p>
+              </div>
+              <div class="reviews-nav__slide">
+                <p class="reviews-nav__item">Александра Терехович</p>
+              </div>
+              <div class="reviews-nav__slide">
+                <p class="reviews-nav__item">Николай Бадин</p>
+              </div>
+              <div class="reviews-nav__slide">
+                <p class="reviews-nav__item">Анастасия Юдина</p>
+              </div>
+            </div>
+          </div>
+          <div class="reviews__slider">
+            <div class="js-reviews-slider reviews-slider">
+              <div class="reviews-slider__slide">
+                <article class="review">
+                  <p class="review__title">В целом все очень хорошо!</p>
+                  <p class="review__rating">
+                    <svg class="review__rating-icon review__rating-icon--fill"><use xlink:href="#star"></use></svg>
+                    <svg class="review__rating-icon review__rating-icon--fill"><use xlink:href="#star"></use></svg>
+                    <svg class="review__rating-icon review__rating-icon--fill"><use xlink:href="#star"></use></svg>
+                    <svg class="review__rating-icon review__rating-icon--fill"><use xlink:href="#star"></use></svg>
+                    <svg class="review__rating-icon"><use xlink:href="#star"></use></svg>
+                  </p>
+                  <div class="review__text">
+                    <p>Постепенно обновляют номерной фонд. Мы были в уже обновлённом номере, все сделано как в хорошем современном отеле. Очень хорошо для людей предпенсионного и пенсионного возраста. Отдохнуть, полечиться. Для молодёжи развлечений не особо много, но вот с маленьким ребёнком вполне можно сюда приехать, походить на процедуры. И того что есть мне понравился горячий источник, хамам и бассейн. Народы было много, хотя уже закончились праздники (были в середине января). Хороший уровень сервиса, вкусное питание, обновлённые номера - вполне рекомендую для того чтобы отдохнуть от городской суеты и насладиться отдыхом на природе!</p>
+                  </div>
+                  <div class="review__features">
+                    <div class="review__features-block">
+                      <p><b>Плюсы:</b></p>
+                      <ul>
+                        <li>- свежий воздух;</li>
+                        <li>- отличная медицина;</li>
+                        <li>- вежливый персонал.</li>
+                      </ul>
+                    </div>
+                    <div class="review__features-block">
+                      <p><b>Минусы:</b></p>
+                      <ul>
+                          <li>- для молодёжи развлечений не особо много;</li>
+                          <li>- нельзя с животными;</li>
+                          <li>- персонал нахамил.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="reviews-slider__slide">
+                <article class="review">
+                  <p class="review__title">Просто замечательно! Жена и дети в восторге</p>
+                  <p class="review__rating">
+                    <svg class="review__rating-icon review__rating-icon--fill"><use xlink:href="#star"></use></svg>
+                    <svg class="review__rating-icon review__rating-icon--fill"><use xlink:href="#star"></use></svg>
+                    <svg class="review__rating-icon review__rating-icon--fill"><use xlink:href="#star"></use></svg>
+                    <svg class="review__rating-icon review__rating-icon--fill"><use xlink:href="#star"></use></svg>
+                    <svg class="review__rating-icon review__rating-icon--fill"><use xlink:href="#star"></use></svg>
+                  </p>
+                  <div class="review__text">
+                    <p>Очень хорошо для людей предпенсионного и пенсионного возраста. Отдохнуть, полечиться. Для молодёжи развлечений не особо много, но вот с маленьким ребёнком вполне можно сюда приехать, походить на процедуры. И того что есть мне понравился горячий источник, хамам и бассейн. Народы было много, хотя уже закончились праздники (были в середине января). Хороший уровень сервиса, вкусное питание, обновлённые номера - вполне рекомендую для того чтобы отдохнуть от городской суеты и насладиться отдыхом на природе!</p>
+                  </div>
+                  <div class="review__features">
+                    <div class="review__features-block">
+                      <p><b>Плюсы:</b></p>
+                      <ul>
+                        <li>- вежливый персонал</li>
+                        <li>- отличная медицина;</li>
+                        <li>- свежий воздух.</li>
+                      </ul>
+                    </div>
+                    <div class="review__features-block">
+                      <p><b>Минусы:</b></p>
+                      <ul>
+                        <li>- нельзя с животными;</li>
+                        <li>- для молодёжи развлечений не особо много;</li>
+                        <li>- персонал нахамил.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="reviews-slider__slide">
+                <article class="review">
+                  <p class="review__title">В целом все очень хорошо!</p>
+                  <p class="review__rating">
+                    <svg class="review__rating-icon review__rating-icon--fill"><use xlink:href="#star"></use></svg>
+                    <svg class="review__rating-icon review__rating-icon--fill"><use xlink:href="#star"></use></svg>
+                    <svg class="review__rating-icon review__rating-icon--fill"><use xlink:href="#star"></use></svg>
+                    <svg class="review__rating-icon review__rating-icon--fill"><use xlink:href="#star"></use></svg>
+                    <svg class="review__rating-icon"><use xlink:href="#star"></use></svg>
+                  </p>
+                  <div class="review__text">
+                    <p>Постепенно обновляют номерной фонд. Мы были в уже обновлённом номере, все сделано как в хорошем современном отеле. Очень хорошо для людей предпенсионного и пенсионного возраста. Отдохнуть, полечиться. Для молодёжи развлечений не особо много, но вот с маленьким ребёнком вполне можно сюда приехать, походить на процедуры. И того что есть мне понравился горячий источник, хамам и бассейн. Народы было много, хотя уже закончились праздники (были в середине января). Хороший уровень сервиса, вкусное питание, обновлённые номера - вполне рекомендую для того чтобы отдохнуть от городской суеты и насладиться отдыхом на природе!</p>
+                  </div>
+                </article>
+              </div>
+              <div class="reviews-slider__slide">
+                <article class="review">
+                  <p class="review__title">Просто замечательно! Жена и дети в восторге</p>
+                  <p class="review__rating">
+                    <svg class="review__rating-icon review__rating-icon--fill"><use xlink:href="#star"></use></svg>
+                    <svg class="review__rating-icon review__rating-icon--fill"><use xlink:href="#star"></use></svg>
+                    <svg class="review__rating-icon review__rating-icon--fill"><use xlink:href="#star"></use></svg>
+                    <svg class="review__rating-icon review__rating-icon--fill"><use xlink:href="#star"></use></svg>
+                    <svg class="review__rating-icon review__rating-icon--fill"><use xlink:href="#star"></use></svg>
+                  </p>
+                  <div class="review__text">
+                    <p>Очень хорошо для людей предпенсионного и пенсионного возраста. Отдохнуть, полечиться. Для молодёжи развлечений не особо много, но вот с маленьким ребёнком вполне можно сюда приехать, походить на процедуры. И того что есть мне понравился горячий источник, хамам и бассейн. Народы было много, хотя уже закончились праздники (были в середине января). Хороший уровень сервиса, вкусное питание, обновлённые номера - вполне рекомендую для того чтобы отдохнуть от городской суеты и насладиться отдыхом на природе!</p>
+                  </div>
+                  <div class="review__features">
+                    <div class="review__features-block">
+                      <p><b>Плюсы:</b></p>
+                      <ul>
+                        <li>- вежливый персонал</li>
+                        <li>- отличная медицина;</li>
+                        <li>- свежий воздух.</li>
+                      </ul>
+                    </div>
+                    <div class="review__features-block">
+                      <p><b>Минусы:</b></p>
+                      <ul>
+                        <li>- нельзя с животными;</li>
+                        <li>- для молодёжи развлечений не особо много;</li>
+                        <li>- персонал нахамил.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="reviews-slider__slide">
+                <article class="review">
+                  <p class="review__title">В целом все очень хорошо!</p>
+                  <p class="review__rating">
+                    <svg class="review__rating-icon review__rating-icon--fill"><use xlink:href="#star"></use></svg>
+                    <svg class="review__rating-icon review__rating-icon--fill"><use xlink:href="#star"></use></svg>
+                    <svg class="review__rating-icon review__rating-icon--fill"><use xlink:href="#star"></use></svg>
+                    <svg class="review__rating-icon review__rating-icon--fill"><use xlink:href="#star"></use></svg>
+                    <svg class="review__rating-icon"><use xlink:href="#star"></use></svg>
+                  </p>
+                  <div class="review__text">
+                    <p>Постепенно обновляют номерной фонд. Мы были в уже обновлённом номере, все сделано как в хорошем современном отеле. Очень хорошо для людей предпенсионного и пенсионного возраста. Отдохнуть, полечиться. Для молодёжи развлечений не особо много, но вот с маленьким ребёнком вполне можно сюда приехать, походить на процедуры. И того что есть мне понравился горячий источник, хамам и бассейн. Народы было много, хотя уже закончились праздники (были в середине января). Хороший уровень сервиса, вкусное питание, обновлённые номера - вполне рекомендую для того чтобы отдохнуть от городской суеты и насладиться отдыхом на природе!</p>
+                  </div>
+                  <div class="review__features">
+                    <div class="review__features-block">
+                      <p><b>Плюсы:</b></p>
+                      <ul>
+                        <li>- свежий воздух;</li>
+                        <li>- вежливый персонал.</li>
+                      </ul>
+                    </div>
+                    <div class="review__features-block">
+                      <p><b>Минусы:</b></p>
+                      <ul>
+                          <li>- нельзя с животными;</li>
+                          <li>- персонал нахамил.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="news">
         <h2 class="text-center">Новости и статьи</h2>
         <div class="news__text">
@@ -253,147 +445,30 @@
         </ul>
       </section>
 
-      <h1>Заголовок типа h1</h1>
-      <p>Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца.</p>
-      <p>Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я. Я так счастлив, мой друг, так упоен ощущением покоя, что искусство мое страдает от этого. Ни одного штриха не мог бы я сделать, а никогда не был таким большим
-        художником, как в эти минуты. Когда от милой моей долины поднимается пар и полдневное солнце стоит над непроницаемой чащей темного леса и лишь редкий луч проскальзывает в его святая святых, а я лежу в высокой траве у быстрого ручья и,
-        прильнув к земле, вижу тысячи всевозможных былинок и чувствую, как близок моему сердцу крошечный мирок, что снует между стебельками, наблюдаю эти неисчислимые, непостижимые разновидности червяков и мошек и чувствую близость всемогущего,
-        создавшего нас по своему подобию, веяние вселюбящего, судившего нам парить в вечном блаженстве, когда взор мой туманится и все вокруг меня и небо надо мной запечатлены в моей душе, точно образ возлюбленной, - тогда, дорогой друг, меня
-        часто томит мысль: "Ах! Как бы выразить, как бы вдохнуть в рисунок то, что так полно, так трепетно живет во мне, запечатлеть отражение моей души, как душа моя - отражение предвечного бога!"</p>
-      <h2>Заголовок типа h2</h2>
-      <p>Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я. Я так счастлив, мой друг, так упоен ощущением покоя, что искусство мое страдает от этого. Ни одного штриха не мог бы я сделать, а никогда не был таким большим
-        художником, как в эти минуты. Когда от милой моей долины поднимается пар и полдневное солнце стоит над непроницаемой чащей темного леса и лишь редкий луч проскальзывает в его святая святых, а я лежу в высокой траве у быстрого ручья и,
-        прильнув к земле, вижу тысячи всевозможных былинок и чувствую, как близок моему сердцу крошечный мирок, что снует между стебельками, наблюдаю эти неисчислимые, непостижимые разновидности червяков и мошек и чувствую близость всемогущего,
-        создавшего нас по своему подобию, веяние вселюбящего, судившего нам парить в вечном блаженстве, когда взор мой туманится и все вокруг меня и небо надо мной запечатлены в моей душе, точно образ возлюбленной, - тогда, дорогой друг, меня
-        часто томит мысль: "Ах! Как бы выразить, как бы вдохнуть в рисунок то, что так полно, так трепетно живет во мне, запечатлеть отражение моей души, как душа моя - отражение предвечного бога!"</p>
-      <h3>Заголовок типа h3</h3>
-      <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее
-        всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни.</p>
-      <ul>
-        <li>маркированный список</li>
-        <li>маркированный список</li>
-        <li>маркированный список</li>
-      </ul>
-      <ol>
-        <li>нумерованный список</li>
-        <li>нумерованный список</li>
-        <li>нумерованный список</li>
-      </ol>
-      <form method="post" class="form" action="index.html">
-        <p>
-          <label>
-            <input class="input" type="text" value="" placeholder="текст..."/>
-          </label>
-        </p>
-        <p>
-          <label>
-            <input class="input" type="text" value="" placeholder="текст..." disabled/>
-          </label>
-        </p>
-        <p>
-          <label>
-            <textarea class="textarea" placeholder="текст..."></textarea>
-          </label>
-        </p>
-        <p>
-          <label>
-            <textarea class="textarea" placeholder="текст..." disabled></textarea>
-          </label>
-        </p>
-        <p>
-          <label class="checkbox-label">
-            <input type="checkbox"/>
-            <span class="checkbox-icon"></span>
-            <span class="checkbox-text">Чекбокс</span>
-          </label>
-        </p>
-        <p>
-          <label class="checkbox-label">
-            <input type="checkbox" checked/>
-            <span class="checkbox-icon"></span>
-            <span class="checkbox-text">Чекбокс</span>
-          </label>
-        </p>
-        <p>
-          <label class="checkbox-label">
-            <input type="checkbox" disabled/>
-            <span class="checkbox-icon"></span>
-            <span class="checkbox-text">Чекбокс</span>
-          </label>
-        </p>
-        <p>
-          <label class="checkbox-label">
-            <input type="checkbox" checked disabled/>
-            <span class="checkbox-icon"></span>
-            <span class="checkbox-text">Чекбокс</span>
-          </label>
-        </p>
-        <p>
-          <label class="radio-label">
-            <input id="radio1" type="radio" name="radio" value="1" checked/>
-            <span class="radio-icon"></span>
-            <span class="radio-text">Радио</span>
-          </label>
-        </p>
-        <p>
-          <label class="radio-label">
-            <input id="radio2" type="radio" name="radio" value="2"/>
-            <span class="radio-icon"></span>
-            <span class="radio-text">Радио</span>
-          </label>
-        </p>
-        <p>
-          <label class="radio-label">
-            <input id="radio2" type="radio" name="radio" value="3" disabled/>
-            <span class="radio-icon"></span>
-            <span class="radio-text">Радио</span>
-          </label>
-        </p>
-        <p>
-          <a class="button disabled" href="javascript:void(0)" tabindex="-1">Я кнопка!</a>
-          <button class="button" type="button">Нет я кнопка!</button>
-          <input class="button" type="button" value="Акститесь!">
-        </p>
-        <p>
-          <div class="select">
-            <select>
-              <option value="1">Вариант 1</option>
-              <option value="1">Вариант 2</option>
-              <option value="1">Вариант 3</option>
-            </select>
+      <section class="download-map">
+        <div id="map" class="download-map__map"></div>
+        <div class="download">
+          <div class="download__image"><img srcset="images/content/download/iphone_11.png, images/content/download/iphone_11@2x.png 2x" alt="alt"></div>
+          <div class="download__text-block">
+            <p class="download__title">Мобильное приложение</p>
+            <p class="download__app">Санаторий "Сибирь"</p>
+            <p class="download__note">Перед заездом в санаторий установите данное мобильное приложение.</p>
+            <div class="download__links">
+              <a href="#" target="_blank" title="Скачать приложение в Google Play"><img width="150" height="45" src="images/content/download/google_play.svg" alt="Google Play"></a>
+              <a href="#" target="_blank" title="Скачать приложение в App Store"><img width="150" height="45" src="images/content/download/app_store.svg" alt="App Store"></a>
+            </div>
           </div>
-        </p>
-      </form>
-      <div class="responsive-table">
-        <table>
-          <tr>
-            <th>Заголовок таблицы</th>
-            <th>Заголовок таблицы</th>
-            <th>Заголовок таблицы</th>
-          </tr>
-          <tr>
-            <td>ячейка таблицы</td>
-            <td>ячейка таблицы</td>
-            <td>ячейка таблицы</td>
-          </tr>
-          <tr>
-            <td>ячейка таблицы</td>
-            <td>ячейка таблицы</td>
-            <td>ячейка таблицы</td>
-          </tr>
-          <tr>
-            <td>ячейка таблицы</td>
-            <td>ячейка таблицы</td>
-            <td>ячейка таблицы</td>
-          </tr>
-        </table>
-      </div>
+        </div>
+      </section>
     </div>
   </main>
 
   //= template/footer.html
 
   //= template/scripts.html
+  <script src="js/reviews.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfgRF4t3ph-ZJSEXkxIJr-H08zNYQvqb4&callback=initContactsMap" async defer></script>
+  <script src="js/map.js"></script>
 </body>
 
 </html>

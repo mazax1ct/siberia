@@ -1,3 +1,10 @@
+//настройки fancybox
+$.fancybox.defaults.hash = false;
+$.fancybox.defaults.toolbar = false;
+$.fancybox.defaults.i18n.en.CLOSE = "Закрыть";
+$.fancybox.defaults.i18n.en.NEXT = "Вперёд";
+$.fancybox.defaults.i18n.en.PREV = "Назад";
+
 //открытие главного меню
 $(document).on('click', '.js-menu-opener', function () {
   $('body').addClass('overflow');

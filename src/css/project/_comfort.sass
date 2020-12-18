@@ -31,6 +31,9 @@
     margin-right: -15px
 
   @media(min-width: 768px)
+    margin-bottom: 40px
+
+  @media(min-width: 1200px)
     margin-bottom: 60px
 
   &__item
@@ -45,6 +48,7 @@
       width: 33.33333%
 
     @media(min-width: 1200px)
+      margin-bottom: 0
       width: 20%
 
 .comfort-feature
@@ -72,14 +76,16 @@
     &:not(:last-child)
       margin-bottom: 25px
 
-      @media(min-width: 768px)
-        margin-bottom: 0
-
     @media(min-width: 768px)
-      margin-bottom: 0
       padding-left: 15px
       padding-right: 15px
       width: 33.33333%
+
+    &:nth-last-child(1),
+    &:nth-last-child(2),
+    &:nth-last-child(3)
+      @media(min-width: 768px)
+        margin-bottom: 0
 
 .staff
   max-width: 490px

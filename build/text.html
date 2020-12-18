@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Текстовая</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#538070">
+  <link rel="shortcut icon" href="images/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+  <svg aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden; position: absolute;" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="burger" viewBox="0 0 30 30">
+      <g>
+      	<path d="M0,7h30v2H0V7z"/>
+      	<path d="M0,14h30v2H0V14z"/>
+      	<path d="M0,21h30v2H0V21z"/>
+      </g>
+    </symbol>
+    <symbol id="close" viewBox="0 0 18 18">
+      <path d="M0.3,1.5c-0.3-0.3-0.3-0.9,0-1.2c0.3-0.3,0.9-0.3,1.2,0L9,7.8l7.5-7.5c0.3-0.3,0.9-0.3,1.2,0s0.3,0.9,0,1.2L10.2,9l7.5,7.5c0.3,0.3,0.3,0.9,0,1.2s-0.9,0.3-1.2,0L9,10.2l-7.5,7.5c-0.3,0.3-0.9,0.3-1.2,0c-0.3-0.3-0.3-0.9,0-1.2L7.7,9L0.3,1.5z"/>
+    </symbol>
+    <symbol id="pin" viewBox="0 0 18 18">
+      <path d="M9,0C5.3,0,2.3,3,2.2,6.7c0,4.7,6.1,10.8,6.4,11.1c0.2,0.2,0.6,0.2,0.8,0c0,0,0,0,0,0c0.3-0.3,6.4-6.4,6.4-11.1C15.7,3,12.7,0,9,0z M9,10.1c-1.9,0-3.4-1.5-3.4-3.4S7.1,3.4,9,3.4s3.4,1.5,3.4,3.4C12.4,8.6,10.9,10.1,9,10.1z"/>
+    </symbol>
+    <symbol id="arrow_down" viewBox="0 0 18 18">
+      <path d="M9.4,12.5l6-6c0.1-0.1,0.2-0.3,0.2-0.5c0-0.2-0.1-0.3-0.2-0.5c-0.3-0.3-0.7-0.3-0.9,0L9,11.1L3.5,5.5c-0.2-0.3-0.7-0.3-0.9,0C2.4,5.6,2.3,5.8,2.3,6v0c0,0.2,0.1,0.3,0.2,0.5l6,6C8.8,12.7,9.2,12.7,9.4,12.5L9.4,12.5z"/>
+    </symbol>
+    <symbol id="arrow_up" viewBox="0 0 18 18">
+      <path d="M8.6,5.5l-6,6c-0.1,0.1-0.2,0.3-0.2,0.5c0,0.2,0.1,0.3,0.2,0.5c0.3,0.3,0.7,0.3,0.9,0L9,6.9l5.5,5.5c0.2,0.3,0.7,0.3,0.9,0c0.1-0.1,0.2-0.3,0.2-0.5v0c0-0.2-0.1-0.3-0.2-0.5l-6-6C9.2,5.3,8.8,5.3,8.6,5.5L8.6,5.5z"/>
+    </symbol>
+    <symbol id="arrow_left" viewBox="0 0 18 18">
+      <path d="M5.5,9.4l6,6c0.1,0.1,0.3,0.2,0.5,0.2c0.2,0,0.3-0.1,0.5-0.2c0.3-0.3,0.3-0.7,0-0.9L6.9,9l5.5-5.5c0.3-0.2,0.3-0.7,0-0.9c-0.1-0.1-0.3-0.2-0.5-0.2h0c-0.2,0-0.3,0.1-0.5,0.2l-6,6C5.3,8.8,5.3,9.2,5.5,9.4L5.5,9.4z"/>
+    </symbol>
+    <symbol id="arrow_right" viewBox="0 0 18 18">
+      <path d="M12.5,8.6l-6-6C6.3,2.4,6.2,2.3,6,2.3c-0.2,0-0.3,0.1-0.5,0.2c-0.3,0.3-0.3,0.7,0,0.9L11.1,9l-5.5,5.5c-0.3,0.2-0.3,0.7,0,0.9c0.1,0.1,0.3,0.2,0.5,0.2h0c0.2,0,0.3-0.1,0.5-0.2l6-6C12.7,9.2,12.7,8.8,12.5,8.6L12.5,8.6z"/>
+    </symbol>
+    <symbol id="star" viewBox="0 0 20 20">
+      <path d="M10.5,0.8l2.5,6l6.5,0.6c0.3,0,0.5,0.3,0.5,0.6c0,0.1-0.1,0.3-0.2,0.3l-4.9,4.3l1.5,6.4c0.1,0.3-0.1,0.6-0.4,0.6c-0.1,0-0.3,0-0.4-0.1L10,16.1l-5.6,3.4c-0.2,0.1-0.6,0.1-0.7-0.2c-0.1-0.1-0.1-0.3-0.1-0.4l1.5-6.4L0.2,8.3C0,8.1-0.1,7.7,0.1,7.5c0.1-0.1,0.2-0.2,0.3-0.2L7,6.8l2.5-6c0.1-0.3,0.4-0.4,0.7-0.3C10.3,0.6,10.4,0.7,10.5,0.8z"/>
+    </symbol>
+  </svg>
+
+  <header class="header compensate-for-scrollbar">
+    <div class="header__inner container">
+      <a class="header__logo" href="main.html"><img src="images/logo.svg" alt="Санаторий Сибирь"></a>
+      <button class="js-menu-opener header__menu-opener menu-opener" type="button" title="Меню">
+        <svg class="menu-opener__icon"><use xlink:href="#burger"></use></svg>
+        <span class="menu-opener__text">Меню</span>
+      </button>
+      <div class="header__dropdown main-menu">
+        <div class="main-menu__inner">
+          <div class="main-menu__top">
+            <p class="main-menu__location">
+              <svg class="main-menu__location-icon"><use xlink:href="#pin"></use></svg>
+              <span class="main-menu__location-text">Тюмень</span>
+            </p>
+            <div class="main-menu__lang">
+              <div class="lang">
+                <button class="js-lang lang__button" type="button">RU <svg class="lang__button-icon"><use xlink:href="#arrow_down"></use></svg></button>
+                <div class="lang__dropdown">
+                  <ul class="lang__list">
+                    <li class="lang__list-item"><a class="lang__list-link" href="#">ENG</a></li>
+                    <li class="lang__list-item"><a class="lang__list-link" href="#">FR</a></li>
+                  </ul>
+                </div>
+              </div>
+  
+            </div>
+            <a class="main-menu__phone" href="tel:+73452687000">+7 (3452) 687-000</a>
+            <button class="main-menu__recall" type="button">Перезвонить?</button>
+            <button class="js-menu-closer main-menu__closer" type="button" title="Закрыть меню"><svg class="main-menu__closer-icon"><use xlink:href="#close"></use></svg></button>
+          </div>
+          <nav class="main-menu__nav" role="navigation" aria-label="Основное меню">
+            <ul class="main-menu__list">
+              <li class="main-menu__list-item main-menu__list-item--root" aria-haspopup="true">
+                <a class="main-menu__list-link" href="#">Проживание</a>
+                <button class="js-menu-lvl2 main-menu__button" type="button" title="Открыть меню второго уровня"><svg class="main-menu__button-icon"><use xlink:href="#arrow_right"></use></svg></button>
+                <div class="main-menu__dropdown" aria-label="submenu">
+                  <button class="js-menu-lvl2-close main-menu__dropdown-closer" type="button"><svg class="main-menu__dropdown-closer-icon"><use xlink:href="#arrow_left"></use></svg> Проживание</button>
+                  <ul class="main-menu__list2">
+                    <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Корпус №1</a></li>
+                    <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Корпус №2</a></li>
+                    <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Коттеджи</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="main-menu__list-item main-menu__list-item--root" aria-haspopup="true">
+                <a class="main-menu__list-link" href="#">Отдых</a>
+                <button class="js-menu-lvl2 main-menu__button" type="button" title="Открыть меню второго уровня"><svg class="main-menu__button-icon"><use xlink:href="#arrow_right"></use></svg></button>
+                <div class="main-menu__dropdown" aria-label="submenu">
+                  <button class="js-menu-lvl2-close main-menu__dropdown-closer" type="button"><svg class="main-menu__dropdown-closer-icon"><use xlink:href="#arrow_left"></use></svg> Отдых</button>
+                  <ul class="main-menu__list2">
+                    <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">SPA - центр</a></li>
+                    <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Афиша</a></li>
+                    <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Салон красоты</a></li>
+                    <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Бары и рестораны</a></li>
+                    <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Детям</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="main-menu__list-item main-menu__list-item--root" aria-haspopup="true">
+                <a class="main-menu__list-link" href="#">Мед центр</a>
+                <button class="js-menu-lvl2 main-menu__button" type="button" title="Открыть меню второго уровня"><svg class="main-menu__button-icon"><use xlink:href="#arrow_right"></use></svg></button>
+                <div class="main-menu__dropdown" aria-label="submenu">
+                  <button class="js-menu-lvl2-close main-menu__dropdown-closer" type="button"><svg class="main-menu__dropdown-closer-icon"><use xlink:href="#arrow_left"></use></svg> Мед центр</button>
+                  <ul class="main-menu__list2">
+                    <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Мед программы</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="main-menu__list-item main-menu__list-item--indent"><a class="main-menu__list-link" href="#">Цены</a></li>
+              <li class="main-menu__list-item"><a class="main-menu__list-link" href="#">Афиша</a></li>
+              <li class="main-menu__list-item"><a class="main-menu__list-link" href="#">SPA - центр</a></li>
+              <li class="main-menu__list-item"><a class="main-menu__list-link" href="#">Косметология</a></li>
+              <li class="main-menu__list-item"><a class="main-menu__list-link" href="#">Бары и рестораны</a></li>
+              <li class="main-menu__list-item"><a class="main-menu__list-link" href="#">Спорт</a></li>
+              <li class="main-menu__list-item main-menu__list-item--indent"><a class="main-menu__list-link" href="#">Детям</a></li>
+              <li class="main-menu__list-item main-menu__list-item--root" aria-haspopup="true">
+                <a class="main-menu__list-link" href="#">О комплексе</a>
+                <button class="js-menu-lvl2 main-menu__button" type="button" title="Открыть меню второго уровня"><svg class="main-menu__button-icon"><use xlink:href="#arrow_right"></use></svg></button>
+                <div class="main-menu__dropdown" aria-label="submenu">
+                  <button class="js-menu-lvl2-close main-menu__dropdown-closer" type="button"><svg class="main-menu__dropdown-closer-icon"><use xlink:href="#arrow_left"></use></svg> О комплексе</button>
+                  <ul class="main-menu__list2">
+                    <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Корпус №1</a></li>
+                    <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Корпус №2</a></li>
+                    <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Коттеджи</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="main-menu__list-item"><a class="main-menu__list-link" href="#">Партнерам</a></li>
+              <li class="main-menu__list-item main-menu__list-item--root" aria-haspopup="true">
+                <a class="main-menu__list-link" href="#">Посетителям</a>
+                <button class="js-menu-lvl2 main-menu__button" type="button" title="Открыть меню второго уровня"><svg class="main-menu__button-icon"><use xlink:href="#arrow_right"></use></svg></button>
+                <div class="main-menu__dropdown" aria-label="submenu">
+                  <button class="js-menu-lvl2-close main-menu__dropdown-closer" type="button"><svg class="main-menu__dropdown-closer-icon"><use xlink:href="#arrow_left"></use></svg> Посетителям</button>
+                  <ul class="main-menu__list2">
+                    <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Спецпредложения</a></li>
+                    <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Для прессы</a></li>
+                    <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Конференс зал</a></li>
+                    <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Вопросы - ответы</a></li>
+                    <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Обратная связь</a></li>
+                    <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Веб - камеры</a></li>
+                    <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Виртуальная экскурсия</a></li>
+                    <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Сертификаты и лицензии</a></li>
+                    <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Реквизиты</a></li>
+                    <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Важная информация</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <div class="main-menu__bottom">
+            <div class="social-block">
+              <p class="social-block__title">Мы в месенджерах</p>
+              <div class="social-block__list">
+                <a class="social-block__link" href="#" target="_blank" rel="nofollow noreferrer" title="Telegram">
+                  <img width="30" height="30" src="images/icons/socials/telegram.svg" alt="Telegram">
+                </a>
+                <a class="social-block__link" href="#" target="_blank" rel="nofollow noreferrer" title="Viber">
+                  <img width="30" height="30" src="images/icons/socials/viber.svg" alt="Viber">
+                </a>
+                <a class="social-block__link" href="#" target="_blank" rel="nofollow noreferrer" title="WhatsApp">
+                  <img width="30" height="30" src="images/icons/socials/whatsapp.svg" alt="WhatsApp">
+                </a>
+              </div>
+            </div>
+            <div class="social-block">
+              <p class="social-block__title">Мы в соцсетях</p>
+              <div class="social-block__list">
+                <a class="social-block__link" href="#" target="_blank" rel="nofollow noreferrer" title="Facebook">
+                  <img width="30" height="30" src="images/icons/socials/facebook.svg" alt="Facebook">
+                </a>
+                <a class="social-block__link" href="#" target="_blank" rel="nofollow noreferrer" title="Instagram">
+                  <img width="30" height="30" src="images/icons/socials/instagram.svg" alt="Instagram">
+                </a>
+                <a class="social-block__link" href="#" target="_blank" rel="nofollow noreferrer" title="YouTube">
+                  <img width="30" height="30" src="images/icons/socials/youtube.svg" alt="YouTube">
+                </a>
+              </div>
+            </div>
+            <button class="button" type="button">Забронировать</button>
+          </div>
+        </div>
+      </div>
+      <div class="header__menu">
+        <ul class="header-menu">
+          <li class="header-menu__item"><a class="header-menu__link" href="#">мед программы</a></li>
+          <li class="header-menu__item"><a class="header-menu__link" href="#">Проживание</a></li>
+          <li class="header-menu__item"><a class="header-menu__link" href="#">инфраструктура</a></li>
+          <li class="header-menu__item"><a class="header-menu__link" href="#">цена</a></li>
+        </ul>
+      </div>
+      <div class="header__social social-block">
+        <div class="social-block__list">
+          <a class="social-block__link" href="#" target="_blank" rel="nofollow noreferrer" title="Telegram">
+            <img width="30" height="30" src="images/icons/socials/telegram.svg" alt="Telegram">
+          </a>
+          <a class="social-block__link" href="#" target="_blank" rel="nofollow noreferrer" title="Viber">
+            <img width="30" height="30" src="images/icons/socials/viber.svg" alt="Viber">
+          </a>
+          <a class="social-block__link" href="#" target="_blank" rel="nofollow noreferrer" title="WhatsApp">
+            <img width="30" height="30" src="images/icons/socials/whatsapp.svg" alt="WhatsApp">
+          </a>
+        </div>
+      </div>
+      <button class="header__button button" type="button">Забронировать</button>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <div class="container">
+      <h1>Заголовок типа h1</h1>
+      <p>Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца.</p>
+      <p>Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я. Я так счастлив, мой друг, так упоен ощущением покоя, что искусство мое страдает от этого. Ни одного штриха не мог бы я сделать, а никогда не был таким большим
+        художником, как в эти минуты. Когда от милой моей долины поднимается пар и полдневное солнце стоит над непроницаемой чащей темного леса и лишь редкий луч проскальзывает в его святая святых, а я лежу в высокой траве у быстрого ручья и,
+        прильнув к земле, вижу тысячи всевозможных былинок и чувствую, как близок моему сердцу крошечный мирок, что снует между стебельками, наблюдаю эти неисчислимые, непостижимые разновидности червяков и мошек и чувствую близость всемогущего,
+        создавшего нас по своему подобию, веяние вселюбящего, судившего нам парить в вечном блаженстве, когда взор мой туманится и все вокруг меня и небо надо мной запечатлены в моей душе, точно образ возлюбленной, - тогда, дорогой друг, меня
+        часто томит мысль: "Ах! Как бы выразить, как бы вдохнуть в рисунок то, что так полно, так трепетно живет во мне, запечатлеть отражение моей души, как душа моя - отражение предвечного бога!"</p>
+      <h2>Заголовок типа h2</h2>
+      <p>Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я. Я так счастлив, мой друг, так упоен ощущением покоя, что искусство мое страдает от этого. Ни одного штриха не мог бы я сделать, а никогда не был таким большим
+        художником, как в эти минуты. Когда от милой моей долины поднимается пар и полдневное солнце стоит над непроницаемой чащей темного леса и лишь редкий луч проскальзывает в его святая святых, а я лежу в высокой траве у быстрого ручья и,
+        прильнув к земле, вижу тысячи всевозможных былинок и чувствую, как близок моему сердцу крошечный мирок, что снует между стебельками, наблюдаю эти неисчислимые, непостижимые разновидности червяков и мошек и чувствую близость всемогущего,
+        создавшего нас по своему подобию, веяние вселюбящего, судившего нам парить в вечном блаженстве, когда взор мой туманится и все вокруг меня и небо надо мной запечатлены в моей душе, точно образ возлюбленной, - тогда, дорогой друг, меня
+        часто томит мысль: "Ах! Как бы выразить, как бы вдохнуть в рисунок то, что так полно, так трепетно живет во мне, запечатлеть отражение моей души, как душа моя - отражение предвечного бога!"</p>
+      <h3>Заголовок типа h3</h3>
+      <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее
+        всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни.</p>
+      <ul>
+        <li>маркированный список</li>
+        <li>маркированный список</li>
+        <li>маркированный список</li>
+      </ul>
+      <ol>
+        <li>нумерованный список</li>
+        <li>нумерованный список</li>
+        <li>нумерованный список</li>
+      </ol>
+      <form method="post" class="form" action="index.html">
+        <p>
+          <label>
+            <input class="input" type="text" value="" placeholder="текст..."/>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input class="input" type="text" value="" placeholder="текст..." disabled/>
+          </label>
+        </p>
+        <p>
+          <label>
+            <textarea class="textarea" placeholder="текст..."></textarea>
+          </label>
+        </p>
+        <p>
+          <label>
+            <textarea class="textarea" placeholder="текст..." disabled></textarea>
+          </label>
+        </p>
+        <p>
+          <label class="checkbox-label">
+            <input type="checkbox"/>
+            <span class="checkbox-icon"></span>
+            <span class="checkbox-text">Чекбокс</span>
+          </label>
+        </p>
+        <p>
+          <label class="checkbox-label">
+            <input type="checkbox" checked/>
+            <span class="checkbox-icon"></span>
+            <span class="checkbox-text">Чекбокс</span>
+          </label>
+        </p>
+        <p>
+          <label class="checkbox-label">
+            <input type="checkbox" disabled/>
+            <span class="checkbox-icon"></span>
+            <span class="checkbox-text">Чекбокс</span>
+          </label>
+        </p>
+        <p>
+          <label class="checkbox-label">
+            <input type="checkbox" checked disabled/>
+            <span class="checkbox-icon"></span>
+            <span class="checkbox-text">Чекбокс</span>
+          </label>
+        </p>
+        <p>
+          <label class="radio-label">
+            <input id="radio1" type="radio" name="radio" value="1" checked/>
+            <span class="radio-icon"></span>
+            <span class="radio-text">Радио</span>
+          </label>
+        </p>
+        <p>
+          <label class="radio-label">
+            <input id="radio2" type="radio" name="radio" value="2"/>
+            <span class="radio-icon"></span>
+            <span class="radio-text">Радио</span>
+          </label>
+        </p>
+        <p>
+          <label class="radio-label">
+            <input id="radio2" type="radio" name="radio" value="3" disabled/>
+            <span class="radio-icon"></span>
+            <span class="radio-text">Радио</span>
+          </label>
+        </p>
+        <p>
+          <a class="button disabled" href="javascript:void(0)" tabindex="-1">Я кнопка!</a>
+          <button class="button" type="button">Нет я кнопка!</button>
+          <input class="button" type="button" value="Акститесь!">
+        </p>
+        <p>
+          <div class="select">
+            <select>
+              <option value="1">Вариант 1</option>
+              <option value="1">Вариант 2</option>
+              <option value="1">Вариант 3</option>
+            </select>
+          </div>
+        </p>
+      </form>
+      <div class="responsive-table">
+        <table>
+          <tr>
+            <th>Заголовок таблицы</th>
+            <th>Заголовок таблицы</th>
+            <th>Заголовок таблицы</th>
+          </tr>
+          <tr>
+            <td>ячейка таблицы</td>
+            <td>ячейка таблицы</td>
+            <td>ячейка таблицы</td>
+          </tr>
+          <tr>
+            <td>ячейка таблицы</td>
+            <td>ячейка таблицы</td>
+            <td>ячейка таблицы</td>
+          </tr>
+          <tr>
+            <td>ячейка таблицы</td>
+            <td>ячейка таблицы</td>
+            <td>ячейка таблицы</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__block">
+          <div class="footer__logo"><img src="images/logo.svg" alt="Санаторий Сибирь"></div>
+          <div class="footer__contacts">
+            <a href="tel:+73452687000">+7 (3452) 687-000</a><br>
+            <a href="mailto:sibir-market@mail.ru">sibir-market@mail.ru</a><br>
+            <a href="mailto:687001@mail.ru">687001@mail.ru</a>
+          </div>
+          <div class="social-block">
+            <p class="social-block__title">Мы в месенджерах</p>
+            <div class="social-block__list">
+              <a class="social-block__link" href="#" target="_blank" rel="nofollow noreferrer" title="Telegram">
+                <img width="30" height="30" src="images/icons/socials/telegram.svg" alt="Telegram">
+              </a>
+              <a class="social-block__link" href="#" target="_blank" rel="nofollow noreferrer" title="Viber">
+                <img width="30" height="30" src="images/icons/socials/viber.svg" alt="Viber">
+              </a>
+              <a class="social-block__link" href="#" target="_blank" rel="nofollow noreferrer" title="WhatsApp">
+                <img width="30" height="30" src="images/icons/socials/whatsapp.svg" alt="WhatsApp">
+              </a>
+            </div>
+          </div>
+          <div class="social-block">
+            <p class="social-block__title">Мы в соцсетях</p>
+            <div class="social-block__list">
+              <a class="social-block__link" href="#" target="_blank" rel="nofollow noreferrer" title="Facebook">
+                <img width="30" height="30" src="images/icons/socials/facebook.svg" alt="Facebook">
+              </a>
+              <a class="social-block__link" href="#" target="_blank" rel="nofollow noreferrer" title="Instagram">
+                <img width="30" height="30" src="images/icons/socials/instagram.svg" alt="Instagram">
+              </a>
+              <a class="social-block__link" href="#" target="_blank" rel="nofollow noreferrer" title="YouTube">
+                <img width="30" height="30" src="images/icons/socials/youtube.svg" alt="YouTube">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__block">
+          <h3 class="footer__block-title">Для посетителей</h3>
+          <ul class="footer-menu">
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Спецпредложения</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Для прессы</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Конференс зал</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Вопросы - ответы</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Обратная связь</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Веб - камеры</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Виртуальная экскурсия</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Сертификаты и лицензии</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Реквизиты</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Важная информация</a></li>
+          </ul>
+        </div>
+        <div class="footer__block">
+          <h3 class="footer__block-title">Услуги санатория</h3>
+          <ul class="footer-menu">
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Мед программы</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Проживание</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Отдых</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Стоимость</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">SPA - центр</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Афиша</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Салон красоты</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Бары и рестораны</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Детям</a></li>
+          </ul>
+        </div>
+        <div class="footer__block">
+          <h3 class="footer__block-title">О комплексе</h3>
+          <ul class="footer-menu">
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">О нас</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">О медицинском центре</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Как добраться</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Отзывы</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Контакты</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Галерея</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Блог</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Наша команда</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Партнерам</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Карьера</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="footer__bottom">© Санаторий "Сибирь" <span class="footer__bottom-separator">|</span> Все права защищены</p>
+  </footer>
+
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

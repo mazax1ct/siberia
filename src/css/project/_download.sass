@@ -1,0 +1,60 @@
+.download
+  @media(min-width: 600px)
+    align-items: center
+    display: flex
+
+  &__image
+    min-width: 245px
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 30px
+    width: 245px
+
+    @media(min-width: 600px)
+      margin-right: 50px
+      margin-left: 0
+      margin-bottom: 0
+
+  &__text-block
+    max-width: 325px
+    margin-left: auto
+    margin-right: auto
+    text-align: center
+
+    @media(min-width: 600px)
+      margin-left: 0
+      margin-right: 0
+      text-align: left
+
+  &__title
+    font-size: 18px
+    line-height: 1.33333
+    margin-bottom: 10px
+
+  &__app
+    font-size: 24px
+    font-weight: 700
+    line-height: 1
+    letter-spacing: 0.6px
+    margin-bottom: 25px
+
+  &__note
+    font-size: 15px
+    line-height: 1.46666
+    margin-bottom: 30px
+
+  &__links
+    align-items: center
+    display: flex
+    justify-content: space-between
+    margin-left: -5px
+    margin-right: -5px
+
+    a
+      margin-left: 5px
+      margin-right: 5px
+      transition: transform 0.3s
+
+    a:hover,
+    a:focus
+      transform: translateY(1px)
