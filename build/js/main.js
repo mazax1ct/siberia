@@ -57,3 +57,30 @@ $(document).on('click', '.js-menu-lvl2-close', function () {
   $('.main-menu__dropdown').removeClass('is-open');
   return false;
 });
+
+//табы
+$(document).on('click', '.js-tabs', function () {
+  $('.js-tabs').removeClass('is-active');
+  $(this).addClass('is-active');
+  $('.tabs[data-tabs="'+$(this).closest('.tabs-nav').attr('data-tabs')+'"] .tab').removeClass('is-active');
+  $('.tabs[data-tabs="'+$(this).closest('.tabs-nav').attr('data-tabs')+'"] .tab[data-target="'+$(this).attr('data-target')+'"]').addClass('is-active');
+  return false;
+});
+
+$(document).ready(function () {
+  //кастомный селект
+	$('.js-select').each(function() {
+   var $p = $(this).closest('.select-wrapper');
+   $(this).select2({
+		 minimumResultsForSearch: Infinity,
+     dropdownPosition: 'below',
+     dropdownParent: $p
+   });
+	}).on("select2:open", function (e) {
+		var $p = $(this).closest('.select-wrapper');
+		$p.addClass('open');
+	}).on("select2:close", function (e) {
+		var $p = $(this).closest('.select-wrapper');
+		$p.removeClass('open');
+	});  
+});

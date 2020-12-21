@@ -45,11 +45,16 @@
       @media(min-width: 992px)
         width: 33.33333%
 
+      &:nth-child(4)
+        @media(min-width: 992px)
+          order: 5
+
     .specials-list__item--type_2
       @media(min-width: 600px)
         width: 100%
 
       @media(min-width: 992px)
+        order: 4
         width: 66.66666%
 
   &__item
@@ -137,7 +142,7 @@
     &:focus
       .specials-list__item-title
         text-decoration: underline
-        
+
       .specials-list__item-image
         transform: scale(1.02)
 

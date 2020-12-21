@@ -1,0 +1,164 @@
+.programs
+  margin-bottom: 60px
+
+  @media(min-width: 1900px)
+    margin-bottom: 120px
+
+  h2
+    text-transform: uppercase
+
+  &__text
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 25px
+    max-width: 1070px
+    text-align: center
+
+    @media(min-width: 1900px)
+      margin-bottom: 60px
+
+.programs-nav
+  border-bottom: 1px solid $light-grey-color
+  display: flex
+  margin-bottom: 20px
+  margin-left: 24px
+  margin-right: 24px
+  overflow-x: auto
+
+  &.slick-initialized
+    overflow: visible
+
+  @media(min-width: 1200px)
+    margin-bottom: 60px
+
+  .slick-prev
+    left: -40px
+
+  .slick-next
+    right: -40px
+
+  &__slide
+    align-items: center
+    border-bottom: 5px solid transparent
+    cursor: pointer
+    display: flex
+    font-weight: 500
+    justify-content: center
+    padding: 21px 30px 20px
+    text-align: center
+    transition: border-color 0.3s, font-weight 0.3s
+
+    &:hover
+      border-bottom-color: lighten($secondary-color, 10%)
+
+    &.slick-current
+      border-bottom-color: $secondary-color
+      font-weight: 600
+
+.program-item
+  font-weight: 500
+
+  @media(min-width: 1024px)
+    align-items: center
+    display: flex
+
+  &__image-block
+    @media(min-width: 1024px)
+      order: 2
+      min-width: 100%
+      width: 100%
+
+    @media(min-width: 1200px)
+      min-width: 63.39869%
+      width: 63.39869%
+
+  &__image
+    display: block
+    width: 100%
+
+  &__duration
+    background-color: $text-color
+    color: #fff
+    display: inline-block
+    padding: 10px 48px
+    vertical-align: top
+
+    @media(min-width: 1024px)
+      margin-top: -50px
+
+    @media(min-width: 1900px)
+      font-size: 20px
+      line-height: 1.4
+      margin-top: -100px
+      padding: 16px 54px
+
+  &__text-block
+    margin-top: -42px
+
+    @media(min-width: 1024px)
+      background-color: #fff
+      margin-top: 0
+      order: 1
+      padding: 30px 30px 30px 0
+      margin-right: -54.24836%
+      min-width: 54.24836%
+      width: 54.24836%
+      z-index: 2
+
+    @media(min-width: 1200px)
+      margin-right: -17.64705%
+      min-width: 54.24836%
+      width: 54.24836%
+
+    @media(min-width: 1900px)
+      padding: 70px 50px 50px 0
+
+    h2
+      font-size: 18px
+      line-height: 1.55555
+      margin-bottom: 15px
+
+      @media(min-width: 1024px)
+        font-size: 30px
+        font-weight: 400
+        text-transform: none
+
+      @media(min-width: 1900px)
+        font-size: 34px
+        line-height: 1.22222
+        letter-spacing: 0.85px
+        margin-bottom: 25px
+
+    h3
+      font-size: 18px
+      font-weight: 500
+      line-height: 1.55555
+      margin-top: 25px
+      margin-bottom: 15px
+
+      @media(min-width: 1900px)
+        font-size: 24px
+        font-weight: 400
+        line-height: 1.16666
+        margin-bottom: 25px
+
+  &__buttons
+    @media(min-width: 520px)
+      display: flex
+      margin-left: -10px
+      margin-right: -10px
+
+    .button
+      width: 100%
+
+      &:not(:last-child)
+        margin-bottom: 10px
+
+        @media(min-width: 520px)
+          margin-bottom: 0
+
+      @media(min-width: 520px)
+        margin-bottom: 0
+        margin-left: 10px
+        margin-right: 10px
+        width: calc(50% - 20px)

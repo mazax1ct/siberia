@@ -10,12 +10,16 @@
   font-weight: 600
   line-height: 1.28571
   letter-spacing: 0.35px
+  min-height: 50px
   padding: 15px 22px
   text-decoration: none
   text-align: center
   text-transform: uppercase
-  transition: background-color 0.3s, border-color 0.3s
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s
   vertical-align: middle
+
+  @media(min-width: 1900px)
+    min-height: 54px
 
   &:hover,
   &:focus,
@@ -45,3 +49,20 @@
       background-color: lighten($text-color, 10%)
       border-color: lighten($text-color, 10%)
       color: #fff
+
+  &--type_3
+    background-color: transparent
+    border-color: $grey-color
+    color: $text-color
+
+    &:hover,
+    &:focus,
+    &:active
+      background-color: lighten($text-color, 10%)
+      border-color: lighten($text-color, 10%)
+      color: #fff
+
+a.button
+  align-items: center
+  display: inline-flex
+  justify-content: center

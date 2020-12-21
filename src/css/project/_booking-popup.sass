@@ -1,0 +1,46 @@
+.booking-popup
+  background-color: #fff
+  display: none
+  max-width: 700px
+  padding: 70px 20px
+  width: 100%
+
+  @media(min-width: 768px)
+    padding: 100px
+
+  &__title
+    font-size: 18px
+    font-weight: 700
+    line-height: 1.22222
+    margin-bottom: 40px
+    text-align: center
+    text-transform: uppercase
+
+    @media(min-width: 768px)
+      font-size: 22px
+
+  &__row
+    margin-bottom: 15px
+
+    @media(min-width: 768px)
+      margin-bottom: 20px
+
+    &--flex
+      @media(min-width: 768px)
+        display: flex
+        margin-left: -10px
+        margin-right: -10px
+
+  &__block
+    margin-bottom: 15px
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+      padding-left: 10px
+      padding-right: 10px
+      width: 50%
+
+  &__button
+    height: 80px
+    margin-top: 5px
+    width: 100%

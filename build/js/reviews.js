@@ -31,10 +31,13 @@ $(document).ready(function () {
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
+      adaptiveHeight: true,
+      asNavFor: '.js-reviews-nav',
       responsive: [
         {
           breakpoint: 767,
           settings: {
+            swipe: false,
             fade: true
           }
         }

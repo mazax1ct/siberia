@@ -28,9 +28,14 @@
     margin-left: -15px
     margin-right: -15px
 
+  &:last-child
+    margin-bottom: -25px
+
+    @media(min-width: 600px)
+      margin-bottom: -30px
+
   &__item
-    &:not(:last-child)
-      margin-bottom: 20px
+    margin-bottom: 25px
 
     @media(min-width: 600px)
       margin-bottom: 30px
@@ -40,15 +45,6 @@
 
     @media(min-width: 768px)
       width: 33.33333%
-
-    &:nth-last-child(1),
-    &:nth-last-child(2)
-      @media(min-width: 600px)
-        margin-bottom: 0
-
-    &:nth-last-child(3)
-      @media(min-width: 768px)
-        margin-bottom: 0
 
     a
       color: $text-color
@@ -63,7 +59,7 @@
       &:focus
         .news-list__item-title
           text-decoration: underline
-          
+
         img
           transform: scale(1.02)
 
@@ -79,7 +75,7 @@
     margin-top: 15px
     margin-bottom: 10px
 
-    @media(min-width: 1200px)
+    @media(min-width: 1900px)
       font-size: 18px
       line-height: 1.44444
       margin-top: 25px

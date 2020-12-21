@@ -1,0 +1,180 @@
+.numbers-list
+  list-style: none
+  margin: 0
+  padding: 0
+
+  &:last-child
+    margin-bottom: -25px
+
+    @media(min-width: 1900px)
+      margin-bottom: -50px
+
+  @media(min-width: 768px)
+    display: flex
+    flex-wrap: wrap
+    margin-left: -15px
+    margin-right: -15px
+
+  &__item
+    display: flex
+    flex-direction: column
+    margin-bottom: 25px
+
+    @media(min-width: 768px)
+      padding-left: 15px
+      padding-right: 15px
+      width: 50%
+
+    @media(min-width: 1200px)
+      width: 33.33333%
+
+    @media(min-width: 1900px)
+      margin-bottom: 50px
+
+.number
+  display: flex
+  flex-direction: column
+  font-size: 14px
+  font-weight: 500
+  height: 100%
+  line-height: 1.57142
+  letter-spacing: 0.35px
+  margin-left: auto
+  margin-right: auto
+  max-width: 490px
+
+  &__link
+    color: $text-color
+    display: block
+    margin-bottom: 15px
+    text-decoration: none
+
+    &:hover,
+    &:focus
+      text-decoration: underline
+
+      img
+        transform: scale(1.02)
+
+  &__image
+    overflow: hidden
+    margin-bottom: 15px
+
+    @media(min-width: 1900px)
+      margin-bottom: 25px
+
+    img
+      transform: scale(1)
+      transition: transform 0.3s
+
+  &__title
+    font-size: 16px
+    font-weight: 700
+    line-height: 1.5
+    margin-bottom: 15px
+
+    @media(min-width: 1900px)
+      font-size: 18px
+      line-height: 1.22222
+
+  &__prop
+    margin-bottom: 15px
+
+    &--type_1
+      display: flex
+      justify-content: space-between
+
+      @media(min-width: 1200px)
+        flex-direction: column
+
+  &__prop-title
+    font-weight: 600
+
+  &__price-block
+    align-items: center
+    display: flex
+    margin-top: auto
+    margin-bottom: 15px
+
+    @media(min-width: 1900px)
+      margin-bottom: 20px
+
+  &__price
+    align-items: center
+    display: flex
+    font-size: 18px
+    font-weight: 700
+    line-height: 1.22222
+
+    @media(min-width: 1900px)
+      font-size: 20px
+      line-height: 1.2
+
+  &__old-price
+    color: #777a81
+    margin-right: 24px
+    padding-left: 10px
+    padding-right: 10px
+    text-decoration: line-through
+
+    @media(min-width: 1900px)
+      line-height: 1.71428
+
+  &__price-icon
+    fill: #ff4e00
+    height: 22px
+    margin-right: 10px
+    width: 22px
+
+    @media(min-width: 1900px)
+      height: 24px
+      width: 24px
+
+  &__buttons
+    @media(min-width: 520px) and (max-width: 767px)
+      display: flex
+      margin-left: -10px
+      margin-right: -10px
+
+    @media(min-width: 1024px) and (max-width: 1199px)
+      display: flex
+      margin-left: -10px
+      margin-right: -10px
+
+    @media(min-width: 1500px)
+      display: flex
+      margin-left: -10px
+      margin-right: -10px
+
+    .button
+      width: 100%
+
+      &:not(:last-child)
+        margin-bottom: 10px
+
+        @media(min-width: 520px) and (max-width: 767px)
+          margin-bottom: 0
+
+        @media(min-width: 1024px) and (max-width: 1199px)
+          margin-bottom: 0
+
+        @media(min-width: 1500px)
+          margin-bottom: 0
+
+      @media(min-width: 520px) and (max-width: 767px)
+        margin-bottom: 0
+        margin-left: 10px
+        margin-right: 10px
+        width: calc(50% - 20px)
+
+      @media(min-width: 1024px) and (max-width: 1199px)
+        margin-bottom: 0
+        margin-left: 10px
+        margin-right: 10px
+        width: calc(50% - 20px)
+
+      @media(min-width: 1500px)
+        margin-bottom: 0
+        margin-left: 10px
+        margin-right: 10px
+        width: calc(50% - 20px)
