@@ -5,6 +5,14 @@ $.fancybox.defaults.i18n.en.CLOSE = "Закрыть";
 $.fancybox.defaults.i18n.en.NEXT = "Вперёд";
 $.fancybox.defaults.i18n.en.PREV = "Назад";
 
+function closeMainMenu(evt) {
+  if (!$('.main-menu__inner').is(evt.target) && $('.main-menu__inner').has(evt.target).length === 0) {
+    $('body').removeClass('overflow');
+    $('.header__dropdown').removeClass('is-open');
+    document.removeEventListener('click', closeMainMenu);
+	}
+}
+
 //открытие главного меню
 $(document).on('click', '.js-menu-opener', function () {
   $('body').addClass('overflow');
@@ -17,16 +25,9 @@ $(document).on('click', '.js-menu-opener', function () {
 $(document).on('click', '.js-menu-closer', function () {
   $('body').removeClass('overflow');
   $('.header__dropdown').removeClass('is-open');
+  document.removeEventListener('click', closeMainMenu);
   return false;
 });
-
-function closeMainMenu(evt) {
-  if (!$('.main-menu__inner').is(evt.target) && $('.main-menu__inner').has(evt.target).length === 0) {
-    $('body').removeClass('overflow');
-    $('.header__dropdown').removeClass('is-open');
-    document.removeEventListener('click', closeMainMenu);
-	}
-}
 
 //открытие закрытие блока выбора языковой версии
 $(document).on('click', '.js-lang', function () {
@@ -82,5 +83,5 @@ $(document).ready(function () {
 	}).on("select2:close", function (e) {
 		var $p = $(this).closest('.select-wrapper');
 		$p.removeClass('open');
-	});  
+	});
 });
