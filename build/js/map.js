@@ -1,10 +1,20 @@
+document.addEventListener("DOMContentLoaded", function(event) {
+  setTimeout(function() {
+    var elem = document.createElement('script');
+    elem.type = 'text/javascript';
+    elem.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDfgRF4t3ph-ZJSEXkxIJr-H08zNYQvqb4&callback=initContactsMap';
+    document.getElementById('map').appendChild(elem);
+  }, 2000);
+});
+
 function initContactsMap() {
   var pointLatLng = {
     lat: 57.152985,
     lng: 65.541227
   };
 
-  var stylesArray = [{
+  var stylesArray = [
+    {
       "featureType": "administrative",
       "elementType": "labels.text.fill",
       "stylers": [{
@@ -104,5 +114,4 @@ function initContactsMap() {
   marker.addListener("click", () => {
     infowindow.open(map, marker);
   });
-
 }
