@@ -2,6 +2,7 @@
 *.jpg -text
 *.png -text
 *.gif -text
+*.webp -text
 
 *.eot binary
 *.ttf binary

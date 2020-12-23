@@ -1,5 +1,7 @@
-.fancybox-active .datepicker {
-  z-index: 99999;
+.fancybox-active {
+  .datepicker {
+    z-index: 99999;
+  }
 }
 
 .datepicker-wrapper {

@@ -1,17 +1,23 @@
 .enter
   margin-bottom: 60px
 
-  @media(min-width: 1200px)
+  @media(min-width: 1024px)
     display: flex
     margin-bottom: 90px
 
   &__image-block
     margin-bottom: 20px
 
-    @media(min-width: 1200px)
+    @media(min-width: 1024px)
       margin-bottom: 0
       padding-right: 15px
+      width: 40%
+
+    @media(min-width: 1200px)
       width: 50%
+
+    @media(min-width: 1400px)
+      padding-right: 25px
 
     @media(min-width: 1900px)
       padding-right: 55px
@@ -26,23 +32,28 @@
     @media(min-width: 768px)
       text-align: left
 
-    @media(min-width: 1200px)
+    @media(min-width: 1024px)
       padding-left: 15px
+      width: 60%
+
+    @media(min-width: 1200px)
       width: 50%
+
+    @media(min-width: 1400px)
+      padding-left: 25px
 
     @media(min-width: 1900px)
       padding-left: 55px
 
     h1
-      font-size: 20px
+      font-size: 28px
       line-height: 1.4
       margin-bottom: 20px
 
-      @media(min-width: 1900px)
+      @media(min-width: 1200px)
         font-size: 38px
         line-height: 1.23684
         letter-spacing: 0.95px
-        margin-bottom: 20px
 
   &__green-key
     align-items: center
