@@ -6,7 +6,7 @@
   &:last-child
     margin-bottom: -25px
 
-    @media(min-width: 1900px)
+    @media(min-width: 1200px)
       margin-bottom: -50px
 
   @media(min-width: 768px)
@@ -26,10 +26,8 @@
       width: 50%
 
     @media(min-width: 1200px)
-      width: 33.33333%
-
-    @media(min-width: 1900px)
       margin-bottom: 50px
+      width: 33.33333%
 
 .number
   display: flex
@@ -46,7 +44,6 @@
   &__link
     color: $text-color
     display: block
-    margin-bottom: 15px
     text-decoration: none
 
     &:hover,
@@ -69,6 +66,9 @@
       transform: scale(1)
       transition: transform 0.3s
       width: 100%
+
+  &__image-caption
+    display: block
 
   &__title
     font-size: 16px
