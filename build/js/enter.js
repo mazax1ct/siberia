@@ -5,9 +5,9 @@ window.addEventListener("load", function() {
     container.innerHTML = "";
     var video = document.createElement("video");
     video.setAttribute("poster", "images/content/enter/poster.jpg");
-    video.setAttribute("autoplay", "");
-    video.setAttribute("muted", "");
-    video.setAttribute("loop", "");
+    video.setAttribute("muted", "muted");
+    video.setAttribute("autoplay", "autoplay");
+    video.setAttribute("loop", "loop");
     var source_1 = document.createElement("source");
     source_1.type = "video/mp4";
     source_1.src = "https://profildoors.center/video/sibir_2019.mp4";
@@ -17,5 +17,7 @@ window.addEventListener("load", function() {
     video.appendChild(source_1);
     video.appendChild(source_2);
     container.appendChild(video);
+    video.muted = "true";
+    video.play();
   }
 });
