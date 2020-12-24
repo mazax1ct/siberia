@@ -4,6 +4,9 @@
 *.gif -text
 *.webp -text
 
+*.mp4 binary
+*.webm binary
+
 *.eot binary
 *.ttf binary
 *.woff binary
