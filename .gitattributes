@@ -4,8 +4,16 @@
 *.gif -text
 *.webp -text
 
-*.mp4 binary
-*.webm binary
+*.mov lfs
+*.avi lfs
+*.asf lfs
+*.mpg lfs
+*.mpeg lfs
+*.mp4 lfs
+*.flv lfs
+*.ogv lfs
+*.wmv lfs
+*.webm lfs
 
 *.eot binary
 *.ttf binary
