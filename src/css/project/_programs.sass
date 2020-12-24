@@ -44,12 +44,16 @@
     display: flex
     font-weight: 500
     justify-content: center
-    padding: 21px 30px 20px
+    min-height: 90px
+    padding: 21px 10px 20px
     text-align: center
     transition: border-color 0.3s, font-weight 0.3s
 
     &:hover
       border-bottom-color: lighten($secondary-color, 10%)
+
+    &.slick-slide
+      display: flex
 
     &.slick-current
       border-bottom-color: $secondary-color

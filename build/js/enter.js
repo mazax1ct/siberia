@@ -10,10 +10,10 @@ window.addEventListener("load", function() {
     video.setAttribute("loop", "loop");
     var source_1 = document.createElement("source");
     source_1.type = "video/mp4";
-    source_1.src = "https://profildoors.center/video/sibir_2019.mp4";
+    source_1.src = "https://profildoors.center/video/video.mp4";
     var source_2 = document.createElement("source");
     source_2.type = "video/webm";
-    source_2.src = "https://profildoors.center/video/sibir_2019.webm";
+    source_2.src = "https://profildoors.center/video/video.webm";
     video.appendChild(source_1);
     video.appendChild(source_2);
     container.appendChild(video);
