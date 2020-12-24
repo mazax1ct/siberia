@@ -12,7 +12,7 @@ $(document).ready(function () {
 });
 
 $("[data-fancybox]").fancybox({
-		afterShow: function( instance, slide ) {
-      $('.js-number-slider').slick('setPosition');
-		}
-	});
+	afterShow: function( instance, slide ) {
+    $('.js-number-slider').slick('setPosition');
+	}
+});

@@ -1,5 +1,8 @@
 .day-order
-  margin-bottom: 60px
+  margin-bottom: 215px
+
+  @media(min-width: 768px)
+    margin-bottom: 60px
 
   @media(min-width: 1900px)
     margin-bottom: 120px
@@ -18,4 +21,337 @@
       margin-bottom: 60px
 
 .timing
-  
+  align-items: flex-end
+  background: url('../images/content/day-order/back.jpg') no-repeat 50% 0 $secondary-color
+  display: flex
+  height: 525px
+  justify-content: center
+  position: relative
+  padding-left: 15px
+  padding-right: 15px
+
+  @media(min-width: 768px)
+    justify-content: flex-end
+    height: 710px
+    padding-bottom: 15px
+
+  &__line
+    bottom: -85px
+    position: absolute
+    left: 50%
+    max-width: 320px
+    transform: translateX(-50%)
+    top: auto
+    width: 100%
+
+    @media(min-width: 768px)
+      bottom: auto
+      left: 0
+      max-width: 100%
+      transform: none
+      top: 180px
+
+  &__line-image
+    display: none
+
+    @media(min-width: 768px)
+      display: block
+
+  &__mask-container
+    @media(min-width: 768px)
+      position: relative
+
+  &__mask
+    @media(min-width: 768px)
+      background: url('../images/line-filled.svg') no-repeat 0 0 / 100% auto transparent
+      clip-path: polygon(0% 0%, 8.5% 0%, 8.5% 100%, 0% 100%)
+      height: 100%
+      left: 0
+      position: absolute
+      top: 0
+      transition: all 0.5s
+      width: 100%
+
+  &__slider
+    max-width: 590px
+    width: 100%
+
+.time-line
+  &__item
+    text-align: center
+    width: 50px
+
+    @media(min-width: 768px)
+      position: absolute
+      text-align: left
+      transform: translate(-25px, -20px)
+      width: auto
+
+    &:first-child
+      @media(min-width: 768px)
+        left: 8.5%
+        top: 37.5%
+
+    &:nth-child(2)
+      @media(min-width: 768px)
+        display: block
+        left: 21.5%
+        top: 67%
+
+      .time-line__time
+        @media(min-width: 768px)
+          left: 0
+          position: absolute
+          top: -70px
+
+      .time-line__title
+        @media(min-width: 768px)
+          left: 0
+          position: absolute
+          top: -40px
+
+    &:nth-child(3)
+      @media(min-width: 768px)
+        display: block
+        left: 34%
+        top: 50%
+
+    &:nth-child(4)
+      @media(min-width: 768px)
+        display: block
+        left: 47.5%
+        top: 15%
+
+    &:nth-child(5)
+      @media(min-width: 768px)
+        display: block
+        left: 58.5%
+        top: 84%
+
+    &:nth-child(6)
+      @media(min-width: 768px)
+        display: block
+        left: 69%
+        top: 80%
+
+    &:nth-child(7)
+      @media(min-width: 768px)
+        display: block
+        left: 80%
+        top: 48.5%
+
+    &:nth-child(8)
+      @media(min-width: 768px)
+        left: 90%
+        top: 2%
+
+    &:nth-child(2),
+    &:nth-child(4),
+    &:nth-child(6),
+    &:nth-child(8)
+      .time-line__time
+        @media(min-width: 768px)
+          left: 0
+          position: absolute
+          top: -70px
+
+      .time-line__title
+        @media(min-width: 768px)
+          left: 0
+          position: absolute
+          top: -40px
+
+  .slick-current
+    .time-line__icon
+      &::before
+        background-color: $secondary-color
+        box-shadow: 0 0 0 10px rgba($secondary-color, 0.4)
+        height: 20px
+        width: 20px
+
+    .time-line__time
+      display: block
+
+  &__button
+    background-color: transparent
+    border: none
+    cursor: pointer
+    padding: 0 0 30px
+    position: relative
+    white-space: nowrap
+
+    @media(min-width: 768px)
+      color: #fff
+      padding: 0
+      text-align: left
+
+    &.is-active
+      .time-line__icon
+        &::before
+          @media(min-width: 768px)
+            background-color: $secondary-color
+            box-shadow: 0 0 0 10px rgba($secondary-color, 0.4)
+            height: 20px
+            width: 20px
+
+  &__icon
+    align-items: center
+    border-radius: 50%
+    display: flex
+    height: 40px
+    position: relative
+    width: 40px
+
+    @media(min-width: 768px)
+      margin-bottom: 5px
+
+    @media(min-width: 1200px)
+      margin-bottom: 20px
+
+    &::before
+      background-color: $light-grey-color
+      border-radius: 50%
+      content: ''
+      height: 10px
+      left: 50%
+      position: absolute
+      top: 50%
+      transform: translate(-50%, -50%)
+      width: 10px
+
+      @media(min-width: 768px)
+        background-color: #fff
+        box-shadow: 0 0 0 6px rgba(#fff, 0.4)
+
+  &__title
+    display: none
+
+    @media(min-width: 768px)
+      display: block
+      font-size: 12px
+      padding-left: 10px
+
+    @media(min-width: 1200px)
+      font-size: 14px
+
+    @media(min-width: 1900px)
+      font-size: 18px
+
+  &__time
+    display: none
+    font-size: 18px
+    font-weight: 600
+    line-height: 22px
+    left: 50%
+    position: absolute
+    top: 50px
+    transform: translateX(-50%)
+
+    @media(min-width: 768px)
+      font-size: 12px
+      display: block
+      position: static
+      padding-left: 10px
+      transform: none
+
+    @media(min-width: 1200px)
+      font-size: 18px
+      margin-bottom: 10px
+
+    @media(min-width: 1900px)
+      font-size: 22px
+      font-weight: 700
+
+.timing-slider
+  display: flex
+  overflow: auto
+
+  &.slick-dotted
+    margin-bottom: 0
+
+  &.slick-initialized
+    display: block
+    overflow: visible
+
+    .slick-list,
+    .slick-track
+      min-width: 100%
+
+    .timing-slider__slide
+      min-width: 0
+
+  &__slide
+    min-width: 100%
+
+  .slick-dots
+    bottom: -40px
+    left: 50%
+    transform: translateX(-50%)
+    width: calc(100% + 70px)
+
+.timing-item
+  background-color: #fff
+  font-weight: 500
+  max-width: 590px
+  padding: 15px
+
+  @media(min-width: 375px)
+    padding: 25px
+
+  @media(min-width: 768px)
+    align-items: center
+    border-radius: 0 0 150px 0
+    display: flex
+    padding: 15px
+
+  &__image
+    display: none
+
+    @media(min-width: 768px)
+      display: block
+      min-width: 235px
+      width: 235px
+
+  &__info
+    @media(min-width: 768px)
+      padding-left: 20px
+
+  &__title
+    font-size: 18px
+    font-weight: 600
+    line-height: 1.22222
+    margin-bottom: 10px
+
+    @media(min-width: 768px)
+      font-size: 22px
+      line-height: 1.22727
+
+  &__text
+    margin-bottom: 15px
+
+    @media(min-width: 768px)
+      margin-bottom: 30px
+
+  &__link
+    align-items: center
+    display: inline-flex
+    text-decoration: none
+
+    &:hover,
+    &:focus
+      text-decoration: underline
+
+  &__link-icon
+    align-items: center
+    background-color: $secondary-color
+    border-radius: 50%
+    display: flex
+    height: 22px
+    justify-content: center
+    margin-left: 10px
+    width: 22px
+
+    svg
+      fill: #fff
+      height: 14px
+      width: 14px
