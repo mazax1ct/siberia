@@ -7,12 +7,14 @@ $(document).ready(function () {
       slidesToScroll: 1,
       arrows: false,
       dots: false,
+      asNavFor: '.js-time-line',
       responsive: [
         {
           breakpoint: 767,
           settings: {
             swipe: false,
-            fade: true
+            fade: true,
+            asNavFor: false
           }
         }
       ]
@@ -53,8 +55,6 @@ if($('body').width() > 767) {
     var parentWidth = $(this).parent().parent().width();
     var leftOffset = parseInt($(this).parent().css("left"));
     var percent = leftOffset / parentWidth * 100;
-    console.log(parentWidth, leftOffset, percent);
-
     $('.timing__mask').css('clip-path', 'polygon(0% 0%, '+percent+'% 0%, '+percent+'% 100%, 0% 100%)');
     $('.js-timing-slider.slick-initialized').slick('slickGoTo', $(this).parent().index());
     return false;
