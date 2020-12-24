@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(event) {
+window.addEventListener("load", function() {
   setTimeout(function() {
     var elem = document.createElement('script');
     elem.type = 'text/javascript';
