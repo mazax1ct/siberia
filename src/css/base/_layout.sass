@@ -30,10 +30,9 @@ body
   padding-bottom: 60px
 
   @media(min-width: 768px)
-    padding-top: 135px
+    padding-top: 130px
 
   @media(min-width: 1200px)
-    padding-top: 170px
     padding-bottom: 120px
 
 .container
@@ -45,3 +44,30 @@ body
 
   @media(min-width: 1350px)
     width: 90%
+
+.page-text
+  font-weight: 500
+  max-width: 1070px
+  margin-bottom: 50px
+
+.page-section
+  &:not(:last-child)
+    margin-bottom: 60px
+
+    @media(min-width: 1900px)
+      margin-bottom: 120px
+
+  h2
+    margin-bottom: 60px
+    text-transform: uppercase
+
+  &__text
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 25px
+    margin-top: -30px
+    max-width: 1070px
+    text-align: center
+
+    @media(min-width: 1200px)
+      margin-bottom: 60px

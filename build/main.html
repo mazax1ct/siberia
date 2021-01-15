@@ -180,6 +180,26 @@
       	<path d="M29.2,27.4c-1.2,0-2.1-0.9-2.1-2.1c0-1.2,0.9-2.1,2.1-2.1c1.2,0,2.1,0.9,2.1,2.1C31.3,26.5,30.4,27.4,29.2,27.4z M29.2,24.6c-0.4,0-0.7,0.3-0.7,0.7s0.3,0.7,0.7,0.7s0.7-0.3,0.7-0.7C29.9,24.9,29.6,24.6,29.2,24.6C29.2,24.6,29.2,24.6,29.2,24.6L29.2,24.6z"/>
       </g>
     </symbol>
+    <symbol id="list" viewBox="0 0 36 36">
+      <g transform="translate(-1689.5 -532.5)">
+    		<path d="M1725.5,568.5h-36v-36h36V568.5z M1690.5,567.5h34v-34h-34V567.5z"/>
+    		<path d="M1697,543h3v3h-3V543z"/>
+    		<path d="M1702,543h16v3h-16V543z"/>
+    		<path d="M1697,549h3v3h-3V549z"/>
+    		<path d="M1702,549h16v3h-16V549z"/>
+    		<path d="M1697,555h3v3h-3V555z"/>
+    		<path d="M1702,555h16v3h-16V555z"/>
+    	</g>
+    </symbol>
+    <symbol id="tiles" viewBox="0 0 35 35">
+      <g transform="translate(-1640 -533)">
+          <path d="M0 0H35V35H0z" transform="translate(1640 533)"/>
+          <path d="M0 0H6V6H0z" fill="#fff" transform="translate(1649 542)"/>
+          <path d="M0 0H6V6H0z" fill="#fff" transform="translate(1660 542)"/>
+          <path d="M0 0H6V6H0z" fill="#fff" transform="translate(1649 553)"/>
+          <path d="M0 0H6V6H0z" fill="#fff" transform="translate(1660 553)"/>
+      </g>
+    </symbol>
   </svg>
 
   <header class="header compensate-for-scrollbar">
@@ -325,10 +345,10 @@
       </div>
       <div class="header__menu">
         <ul class="header-menu">
-          <li class="header-menu__item"><a class="header-menu__link" href="#">мед программы</a></li>
-          <li class="header-menu__item"><a class="header-menu__link" href="#">Проживание</a></li>
-          <li class="header-menu__item"><a class="header-menu__link" href="#">инфраструктура</a></li>
-          <li class="header-menu__item"><a class="header-menu__link" href="#">цена</a></li>
+          <li class="header-menu__item"><a class="header-menu__link" href="#">Мед программы</a></li>
+          <li class="header-menu__item"><a class="header-menu__link" href="numbers.html">Проживание</a></li>
+          <li class="header-menu__item"><a class="header-menu__link" href="#">Инфраструктура</a></li>
+          <li class="header-menu__item"><a class="header-menu__link" href="#">Цена</a></li>
         </ul>
       </div>
       <div class="header__social social-block">
@@ -429,9 +449,9 @@
         </li>
       </ul>
 
-      <section class="programs">
+      <section class="page-section">
         <h2 class="text-center">24 специальные сибирские программы</h2>
-        <div class="programs__text">
+        <div class="page-section__text">
           <p>Каждая программа сочетает в себе современную медицину с уникальными природными факторами. Это позволяет по новому раскрыть и усилить каждую процедуру и закрепить эффект на длительное время.</p>
         </div>
         <div class="js-programs-nav programs-nav">
@@ -670,16 +690,19 @@
                           <img src="images/content/numbers/mobile/n_1.jpg" srcset="images/content/numbers/mobile/n_1@2x.jpg 2x" alt="alt" loading="lazy">
                         </picture>
                       </span>
-                      <span class="number__link-caption">Номер "Стандарт 1 категории" (Корпус&nbsp;№1)</span>
+                      <span class="number__image-caption">Номер "Стандарт 1 категории" (Корпус&nbsp;№1)</span>
                     </a>
                   </h3>
-                  <p class="number__prop number__prop--type_1"><span class="number__prop-title">ПЛОЩАДЬ НОМЕРА</span> <span>40 м²</span></p>
-                  <p class="number__prop"><span class="number__prop-title">ПРОЖИВАНИЕ</span><br> 2 взрослых — без детей, максимум 1 взрослый + максимум 1 ребенок</p>
-                  <p class="number__prop"><span class="number__prop-title">МЕД ПРОГРАММА, КОТОРАЯ ВКЛЮЧЕНА&nbsp;БЕСПЛАТНО</span><br> Санаторно-курортное лечение</p>
-                  <p class="number__price-block"><span class="number__price">от 5 800 ₽</span></p>
-                  <div class="number__buttons">
-                    <a class="button button--type_3" href="#" data-fancybox="number_popup_1" data-src="#number-popup">ПОДРОБНЕЕ</a>
-                    <button class="button" type="button">ЗАБРОНИРОВАТЬ</button>
+                  <div class="number__info">
+                    <p class="number__title">Номер "Стандарт 1 категории" (Корпус&nbsp;№1)</p>
+                    <p class="number__prop number__prop--type_1"><span class="number__prop-title">ПЛОЩАДЬ НОМЕРА</span> <span>40 м²</span></p>
+                    <p class="number__prop"><span class="number__prop-title">ПРОЖИВАНИЕ</span><br> 2 взрослых — без детей, максимум 1 взрослый + максимум 1 ребенок</p>
+                    <p class="number__prop"><span class="number__prop-title">МЕД ПРОГРАММА, КОТОРАЯ ВКЛЮЧЕНА&nbsp;БЕСПЛАТНО</span><br> Санаторно-курортное лечение</p>
+                    <p class="number__price-block"><span class="number__price">от 5 800 ₽</span></p>
+                    <div class="number__buttons">
+                      <a class="button button--type_3" href="#" data-fancybox="number_popup_1" data-src="#number-popup">ПОДРОБНЕЕ</a>
+                      <button class="button" type="button">ЗАБРОНИРОВАТЬ</button>
+                    </div>
                   </div>
                 </article>
               </li>
@@ -693,19 +716,22 @@
                           <img src="images/content/numbers/mobile/n_2.jpg" srcset="images/content/numbers/mobile/n_2@2x.jpg 2x" alt="alt" loading="lazy">
                         </picture>
                       </span>
-                      <span class="number__title-caption">Номер "Стандарт" (Корпус&nbsp;№2)</span>
+                      <span class="number__image-caption">Номер "Стандарт" (Корпус&nbsp;№2)</span>
                     </a>
                   </h3>
-                  <p class="number__prop number__prop--type_1"><span class="number__prop-title">ПЛОЩАДЬ НОМЕРА</span> <span>42 м²</span></p>
-                  <p class="number__prop"><span class="number__prop-title">ПРОЖИВАНИЕ</span><br> 2 взрослых — без детей, максимум 1 взрослый + максимум 1 ребенок</p>
-                  <p class="number__prop"><span class="number__prop-title">МЕД ПРОГРАММА, КОТОРАЯ ВКЛЮЧЕНА&nbsp;БЕСПЛАТНО</span><br> Санаторно-курортное лечение</p>
-                  <p class="number__price-block">
-                    <span class="number__old-price">от 5600 ₽</span>
-                    <span class="number__price"><svg class="number__price-icon"><use xlink:href="#fire"></use></svg> от 3 900 ₽</span>
-                  </p>
-                  <div class="number__buttons">
-                    <a class="button button--type_3" href="#" data-fancybox="number_popup_2" data-src="#number-popup">ПОДРОБНЕЕ</a>
-                    <button class="button" type="button">ЗАБРОНИРОВАТЬ</button>
+                  <div class="number__info">
+                    <p class="number__title">Номер "Стандарт" (Корпус&nbsp;№2)</p>
+                    <p class="number__prop number__prop--type_1"><span class="number__prop-title">ПЛОЩАДЬ НОМЕРА</span> <span>42 м²</span></p>
+                    <p class="number__prop"><span class="number__prop-title">ПРОЖИВАНИЕ</span><br> 2 взрослых — без детей, максимум 1 взрослый + максимум 1 ребенок</p>
+                    <p class="number__prop"><span class="number__prop-title">МЕД ПРОГРАММА, КОТОРАЯ ВКЛЮЧЕНА&nbsp;БЕСПЛАТНО</span><br> Санаторно-курортное лечение</p>
+                    <p class="number__price-block">
+                      <span class="number__old-price">от 5600 ₽</span>
+                      <span class="number__price"><svg class="number__price-icon"><use xlink:href="#fire"></use></svg> от 3 900 ₽</span>
+                    </p>
+                    <div class="number__buttons">
+                      <a class="button button--type_3" href="#" data-fancybox="number_popup_2" data-src="#number-popup">ПОДРОБНЕЕ</a>
+                      <button class="button" type="button">ЗАБРОНИРОВАТЬ</button>
+                    </div>
                   </div>
                 </article>
               </li>
@@ -719,18 +745,21 @@
                           <img src="images/content/numbers/mobile/n_3.jpg" srcset="images/content/numbers/mobile/n_3@2x.jpg 2x" alt="alt" loading="lazy">
                         </picture>
                       </span>
+                      <span class="number__image-caption">Номер "Стандарт 1 категории" (Корпус&nbsp;№1)</span>
                     </a>
-                    <span class="number__title-caption">Номер "Стандарт 1 категории" (Корпус&nbsp;№1)</span>
                   </h3>
-                  <p class="number__prop number__prop--type_1"><span class="number__prop-title">ПЛОЩАДЬ НОМЕРА</span> <span>34 м²</span></p>
-                  <p class="number__prop"><span class="number__prop-title">ПРОЖИВАНИЕ</span><br> 1 взрослый — без детей</p>
-                  <p class="number__prop"><span class="number__prop-title">МЕД ПРОГРАММА, КОТОРАЯ ВКЛЮЧЕНА&nbsp;БЕСПЛАТНО</span><br> Санаторно-курортное лечение</p>
-                  <p class="number__price-block">
-                    <span class="number__price">от 3 700 ₽</span>
-                  </p>
-                  <div class="number__buttons">
-                    <a class="button button--type_3" href="#" data-fancybox="number_popup_3" data-src="#number-popup">ПОДРОБНЕЕ</a>
-                    <button class="button" type="button">ЗАБРОНИРОВАТЬ</button>
+                  <div class="number__info">
+                    <p class="number__title">Номер "Стандарт 1 категории" (Корпус&nbsp;№1)</p>
+                    <p class="number__prop number__prop--type_1"><span class="number__prop-title">ПЛОЩАДЬ НОМЕРА</span> <span>34 м²</span></p>
+                    <p class="number__prop"><span class="number__prop-title">ПРОЖИВАНИЕ</span><br> 1 взрослый — без детей</p>
+                    <p class="number__prop"><span class="number__prop-title">МЕД ПРОГРАММА, КОТОРАЯ ВКЛЮЧЕНА&nbsp;БЕСПЛАТНО</span><br> Санаторно-курортное лечение</p>
+                    <p class="number__price-block">
+                      <span class="number__price">от 3 700 ₽</span>
+                    </p>
+                    <div class="number__buttons">
+                      <a class="button button--type_3" href="#" data-fancybox="number_popup_3" data-src="#number-popup">ПОДРОБНЕЕ</a>
+                      <button class="button" type="button">ЗАБРОНИРОВАТЬ</button>
+                    </div>
                   </div>
                 </article>
               </li>
@@ -744,16 +773,19 @@
                           <img src="images/content/numbers/mobile/n_4.jpg" srcset="images/content/numbers/mobile/n_4@2x.jpg 2x" alt="alt" loading="lazy">
                         </picture>
                       </span>
-                      <span class="number__link-caption">Номер "Стандарт 1 категории" (Корпус&nbsp;№1)</span>
+                      <span class="number__image-caption">Номер "Стандарт 1 категории" (Корпус&nbsp;№1)</span>
                     </a>
                   </h3>
-                  <p class="number__prop number__prop--type_1"><span class="number__prop-title">ПЛОЩАДЬ НОМЕРА</span> <span>40 м²</span></p>
-                  <p class="number__prop"><span class="number__prop-title">ПРОЖИВАНИЕ</span><br> 2 взрослых — без детей, максимум 1 взрослый + максимум 1 ребенок</p>
-                  <p class="number__prop"><span class="number__prop-title">МЕД ПРОГРАММА, КОТОРАЯ ВКЛЮЧЕНА&nbsp;БЕСПЛАТНО</span><br> Санаторно-курортное лечение</p>
-                  <p class="number__price-block"><span class="number__price">от 5 800 ₽</span></p>
-                  <div class="number__buttons">
-                    <a class="button button--type_3" href="#" data-fancybox="number_popup_4" data-src="#number-popup">ПОДРОБНЕЕ</a>
-                    <button class="button" type="button">ЗАБРОНИРОВАТЬ</button>
+                  <div class="number__info">
+                    <p class="number__title">Номер "Стандарт 1 категории" (Корпус&nbsp;№1)</p>
+                    <p class="number__prop number__prop--type_1"><span class="number__prop-title">ПЛОЩАДЬ НОМЕРА</span> <span>40 м²</span></p>
+                    <p class="number__prop"><span class="number__prop-title">ПРОЖИВАНИЕ</span><br> 2 взрослых — без детей, максимум 1 взрослый + максимум 1 ребенок</p>
+                    <p class="number__prop"><span class="number__prop-title">МЕД ПРОГРАММА, КОТОРАЯ ВКЛЮЧЕНА&nbsp;БЕСПЛАТНО</span><br> Санаторно-курортное лечение</p>
+                    <p class="number__price-block"><span class="number__price">от 5 800 ₽</span></p>
+                    <div class="number__buttons">
+                      <a class="button button--type_3" href="#" data-fancybox="number_popup_4" data-src="#number-popup">ПОДРОБНЕЕ</a>
+                      <button class="button" type="button">ЗАБРОНИРОВАТЬ</button>
+                    </div>
                   </div>
                 </article>
               </li>
@@ -767,18 +799,21 @@
                           <img src="images/content/numbers/mobile/n_5.jpg" srcset="images/content/numbers/mobile/n_5@2x.jpg 2x" alt="alt" loading="lazy">
                         </picture>
                       </span>
-                      <span class="number__link-caption">Номер "Стандарт" (Корпус&nbsp;№2)</span>
+                      <span class="number__image-caption">Номер "Стандарт" (Корпус&nbsp;№2)</span>
                     </a>
                   </h3>
-                  <p class="number__prop number__prop--type_1"><span class="number__prop-title">ПЛОЩАДЬ НОМЕРА</span> <span>50 м²</span></p>
-                  <p class="number__prop"><span class="number__prop-title">ПРОЖИВАНИЕ</span><br> 2 взрослых — без детей, максимум 1 взрослый + максимум 1 ребенок</p>
-                  <p class="number__prop"><span class="number__prop-title">МЕД ПРОГРАММА, КОТОРАЯ ВКЛЮЧЕНА&nbsp;БЕСПЛАТНО</span><br> Санаторно-курортное лечение</p>
-                  <p class="number__price-block">
-                    <span class="number__price">от 5 800 ₽</span>
-                  </p>
-                  <div class="number__buttons">
-                    <a class="button button--type_3" href="#" data-fancybox="number_popup_5" data-src="#number-popup">ПОДРОБНЕЕ</a>
-                    <button class="button" type="button">ЗАБРОНИРОВАТЬ</button>
+                  <div class="number__info">
+                    <p class="number__title">Номер "Стандарт" (Корпус&nbsp;№2)</p>
+                    <p class="number__prop number__prop--type_1"><span class="number__prop-title">ПЛОЩАДЬ НОМЕРА</span> <span>50 м²</span></p>
+                    <p class="number__prop"><span class="number__prop-title">ПРОЖИВАНИЕ</span><br> 2 взрослых — без детей, максимум 1 взрослый + максимум 1 ребенок</p>
+                    <p class="number__prop"><span class="number__prop-title">МЕД ПРОГРАММА, КОТОРАЯ ВКЛЮЧЕНА&nbsp;БЕСПЛАТНО</span><br> Санаторно-курортное лечение</p>
+                    <p class="number__price-block">
+                      <span class="number__price">от 5 800 ₽</span>
+                    </p>
+                    <div class="number__buttons">
+                      <a class="button button--type_3" href="#" data-fancybox="number_popup_5" data-src="#number-popup">ПОДРОБНЕЕ</a>
+                      <button class="button" type="button">ЗАБРОНИРОВАТЬ</button>
+                    </div>
                   </div>
                 </article>
               </li>
@@ -792,18 +827,21 @@
                           <img src="images/content/numbers/mobile/n_6.jpg" srcset="images/content/numbers/mobile/n_6@2x.jpg 2x" alt="alt" loading="lazy">
                         </picture>
                       </span>
-                      <span class="number__link-caption">Номер "Стандарт 1 категории" (Корпус&nbsp;№1)</span>
+                      <span class="number__image-caption">Номер "Стандарт 1 категории" (Корпус&nbsp;№1)</span>
                     </a>
                   </h3>
-                  <p class="number__prop number__prop--type_1"><span class="number__prop-title">ПЛОЩАДЬ НОМЕРА</span> <span>56 м²</span></p>
-                  <p class="number__prop"><span class="number__prop-title">ПРОЖИВАНИЕ</span><br> 1 взрослый — без детей</p>
-                  <p class="number__prop"><span class="number__prop-title">МЕД ПРОГРАММА, КОТОРАЯ ВКЛЮЧЕНА&nbsp;БЕСПЛАТНО</span><br> Санаторно-курортное лечение</p>
-                  <p class="number__price-block">
-                    <span class="number__price">от 3 700 ₽</span>
-                  </p>
-                  <div class="number__buttons">
-                    <a class="button button--type_3" href="#" data-fancybox="number_popup_6" data-src="#number-popup">ПОДРОБНЕЕ</a>
-                    <button class="button" type="button">ЗАБРОНИРОВАТЬ</button>
+                  <div class="number__info">
+                    <p class="number__title">Номер "Стандарт 1 категории" (Корпус&nbsp;№1)</p>
+                    <p class="number__prop number__prop--type_1"><span class="number__prop-title">ПЛОЩАДЬ НОМЕРА</span> <span>56 м²</span></p>
+                    <p class="number__prop"><span class="number__prop-title">ПРОЖИВАНИЕ</span><br> 1 взрослый — без детей</p>
+                    <p class="number__prop"><span class="number__prop-title">МЕД ПРОГРАММА, КОТОРАЯ ВКЛЮЧЕНА&nbsp;БЕСПЛАТНО</span><br> Санаторно-курортное лечение</p>
+                    <p class="number__price-block">
+                      <span class="number__price">от 3 700 ₽</span>
+                    </p>
+                    <div class="number__buttons">
+                      <a class="button button--type_3" href="#" data-fancybox="number_popup_6" data-src="#number-popup">ПОДРОБНЕЕ</a>
+                      <button class="button" type="button">ЗАБРОНИРОВАТЬ</button>
+                    </div>
                   </div>
                 </article>
               </li>
@@ -948,9 +986,9 @@
         </div>
       </section>
 
-      <section class="day-order">
+      <section class="page-section">
         <h2 class="text-center">День в санатории "Сибирь"</h2>
-        <div class="day-order__text">
+        <div class="page-section__text">
           <p>Вы можете посмотреть как проходит обычный день в санатории "Сибирь". Расписание может меняться с учетом выбора путевки и количества дней.</p>
         </div>
         <div class="timing">
@@ -1135,9 +1173,9 @@
         </div>
       </section>
 
-      <section class="specials">
+      <section class="page-section">
         <h2 class="text-center">Специальные события и предложения</h2>
-        <div class="specials__text">
+        <div class="page-section__text">
           <p>Мы заботимся о разнообразии и качестве отдыха наших Гостей и делаем все для того, чтобы Вы хорошо провели время в нашем санатории и захотели приезжать к нам вновь и вновь!</p>
         </div>
         <div class="specials-list">
@@ -1201,9 +1239,9 @@
         </div>
       </section>
 
-      <section class="comfort">
+      <section class="page-section">
         <h2 class="text-center">Комфорт и условия для вас создают</h2>
-        <div class="comfort__text">
+        <div class="page-section__text">
           <p>Все наши сотрудники являются высококвалифицированными и очень любят свою работу. Поэтому нам удается создать такие чудесные условия для вашего лечения и отдыха.</p>
         </div>
         <ul class="comfort-features">
@@ -1278,9 +1316,9 @@
         </ul>
       </section>
 
-      <section class="gallery">
+      <section class="page-section">
         <h2 class="text-center">Фотогалерея</h2>
-        <div class="gallery__text">
+        <div class="page-section__text">
           <p>Фотографии санатория, прилегающей территории, сделанные нами или нашими гостями. Вы можете увидеть интерьеры  номеров, спортивных и развлекательных комплексов.</p>
         </div>
         <ul class="gallery-list">
@@ -1335,9 +1373,9 @@
         </ul>
       </section>
 
-      <section class="reviews">
+      <section class="page-section reviews">
         <h2 class="text-center">Отзывы</h2>
-        <div class="reviews__text">
+        <div class="page-section__text">
           <p>Мы рады делится с вами отзывами наших гостей. Мы делаем все, чтобы все, кто посещают наш санаторий оставались довольными на все 100%.</p>
         </div>
         <div class="reviews__container">
@@ -1512,9 +1550,9 @@
         </div>
       </section>
 
-      <section class="news">
+      <section class="page-section">
         <h2 class="text-center">Новости и статьи</h2>
-        <div class="news__text">
+        <div class="page-section__text">
           <p>Следите за всеми новостями, которые происходят в нашем санатории. Так же мы рады делится с вами полезной информацией об отдыхе и лечении.</p>
         </div>
         <ul class="news-list">

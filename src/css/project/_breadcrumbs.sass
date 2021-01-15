@@ -1,0 +1,36 @@
+.breadrcumbs
+  align-items: center
+  color: #9d9fa4
+  display: flex
+  flex-wrap: wrap
+  font-size: 13px
+  list-style: none
+  line-height: 1.84615
+  margin-top: 0
+  margin-bottom: 25px
+  padding: 0
+
+  @media(min-width: 1900px)
+    font-size: 14px
+    margin-bottom: 40px
+
+  &__item
+    &:not(:last-child)
+      &::after
+        background-color: $text-color
+        display: inline-block
+        content: ''
+        height: 4px
+        margin-top: -3px
+        margin-right: 10px
+        margin-left: 10px
+        vertical-align: middle
+        width: 4px
+
+  &__link
+    color: $text-color
+    text-decoration: none
+
+    &:hover,
+    &:focus
+      text-decoration: underline
