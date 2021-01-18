@@ -1,0 +1,233 @@
+.number-detail
+  font-weight: 500
+
+  h1
+    text-transform: uppercase
+
+    @media(min-width: 1900px)
+      margin-bottom: 50px
+
+  &__description
+    @media(min-width: 1024px)
+      display: flex
+
+  &__image-block
+    max-width: 650px
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 50px
+
+    @media(min-width: 1024px)
+      margin-bottom: 0
+      margin-left: 0
+      margin-right: 0
+      min-width: 500px
+      width: 500px
+
+    @media(min-width: 1900px)
+      min-width: 650px
+      width: 650px
+
+    img
+      display: block
+      width: 100%
+
+  &__info
+    @media(min-width: 1024px)
+      display: flex
+      flex-direction: column
+      flex-grow: 1
+      margin-bottom: 30px
+      padding-left: 40px
+
+    @media(min-width: 1900px)
+      padding-left: 50px
+
+  &__top
+    @media(min-width: 1024px)
+      margin-bottom: 20px
+
+  &__props
+    @media(min-width: 1024px)
+      display: flex
+      flex-wrap: wrap
+      margin-left: -15px
+      margin-right: -15px
+
+    .number-detail__prop
+      margin-bottom: 20px
+
+      @media(min-width: 1024px)
+        padding-left: 15px
+        padding-right: 15px
+        width: 50%
+
+      @media(min-width: 1900px)
+        margin-bottom: 35px
+
+  &__prop
+    font-size: 14px
+    font-weight: 500
+    line-height: 1.57142
+    letter-spacing: 0.35px
+    margin-bottom: 20px
+
+    @media(min-width: 1900px)
+      margin-bottom: 35px
+
+  &__prop-title
+    display: block
+    font-weight: 700
+    margin-bottom: 10px
+    text-transform: uppercase
+
+    @media(min-width: 1900px)
+      margin-bottom: 15px
+
+  &__additional
+    font-size: 14px
+    letter-spacing: 0.35px
+    margin-top: 40px
+
+    @media(min-width: 1900px)
+      margin-top: 55px
+
+  &__additional-title
+    font-weight: 600
+    margin-bottom: 10px
+
+  &__additional-list
+    list-style: none
+    margin: 0
+    padding: 0
+
+    li
+      position: relative
+      padding-left: 15px
+
+      &::before
+        background-color: $secondary-color
+        content: ''
+        height: 5px
+        left: 0
+        position: absolute
+        top: 0.65em
+        width: 5px
+
+      &:not(:last-child)
+        margin-bottom: 15px
+
+      span
+        font-weight: 600
+        text-transform: uppercase
+
+        &:first-child
+          display: block
+
+          @media(min-width: 1024px)
+            display: inline
+
+  &__bottom
+    margin-bottom: 60px
+    text-align: center
+
+    @media(min-width: 1024px)
+      margin-top: auto
+      margin-bottom: 0
+      order: 2
+
+    @media(min-width: 1200px)
+      align-items: center
+      display: flex
+      justify-content: space-between
+
+    .button
+      max-width: 405px
+      width: 100%
+
+      @media(min-width: 1200px)
+        flex-grow: 1
+        width: auto
+
+  &__price-block
+    align-items: center
+    display: flex
+    justify-content: center
+    margin-top: auto
+    margin-bottom: 20px
+
+    @media(min-width: 1200px)
+      flex-grow: 1
+      justify-content: flex-start
+      margin-bottom: 0
+      margin-top: 0
+
+  &__price
+    align-items: center
+    display: flex
+    font-size: 18px
+    font-weight: 700
+    line-height: 1.22222
+
+    @media(min-width: 1900px)
+      font-size: 20px
+      line-height: 1.2
+
+  &__old-price
+    color: #777a81
+    font-weight: 500
+    margin-right: 24px
+    padding-left: 10px
+    padding-right: 10px
+    text-decoration: line-through
+
+    @media(min-width: 1900px)
+      line-height: 1.71428
+
+  &__price-icon
+    fill: #ff4e00
+    height: 22px
+    margin-right: 10px
+    width: 22px
+
+    @media(min-width: 1900px)
+      height: 24px
+      width: 24px
+
+  &__section
+    &:not(:last-child)
+      margin-bottom: 60px
+
+      @media(min-width: 1900px)
+        margin-bottom: 120px
+
+    ol,
+    ul
+      &:not([class])
+        li
+          &:not(:last-child)
+            margin-bottom: 15px
+
+    .number-features
+      @media(min-width: 768px)
+        display: flex
+        flex-wrap: wrap
+        margin-left: -15px
+        margin-right: -15px
+        margin-bottom: -45px
+
+    .number-features__item
+      @media(min-width: 768px)
+        flex-direction: column
+        margin-bottom: 45px
+        padding-left: 15px
+        padding-right: 15px
+        text-align: center
+        width: 25%
+
+      @media(min-width: 1200px)
+        width: 16.66666%
+
+    .number-features__item-icon
+      @media(min-width: 768px)
+        margin-right: 0

@@ -1,0 +1,30 @@
+.program-tables
+  table
+    min-width: 700px
+
+    td
+      &:first-child
+        width: 260px
+
+        @media(min-width: 1200px)
+          width: 590px
+
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4)
+        width: 110px
+
+        @media(min-width: 1200px)
+          width: 170px
+
+        @media(min-width: 1900px)
+          width: 240px
+
+      &:nth-child(5)
+        width: 155px
+
+        @media(min-width: 1200px)
+          width: 170px
+
+        @media(min-width: 1900px)
+          width: 240px

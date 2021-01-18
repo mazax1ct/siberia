@@ -12,7 +12,10 @@
     margin-bottom: 15px
     padding-left: 10px
     padding-right: 10px
-    width: 50%
+    width: 100%
+
+    @media(min-width: 580px)
+      width: 50%
 
     @media(min-width: 1024px)
       width: auto
@@ -20,7 +23,8 @@
     &:nth-child(1),
     &:nth-child(4),
     &:nth-child(5)
-      width: 100%
+      @media(min-width: 580px)
+        width: 100%
 
     &:nth-child(1)
       flex-grow: 1
@@ -182,6 +186,9 @@
       font-size: 12px
       font-weight: 500
       margin-bottom: 0
+
+    @media(min-width: 1200px)
+      font-size: 14px
 
     @media(min-width: 1900px)
       font-size: 16px

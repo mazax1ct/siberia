@@ -1,0 +1,62 @@
+.why-online
+  border: 1px solid $grey-color
+  margin-top: 60px
+  margin-bottom: 60px
+  padding: 30px 20px
+
+  @media(min-width: 768px)
+    align-items: center
+    flex-wrap: wrap
+    display: flex
+    justify-content: space-between
+    padding: 40px
+
+  @media(min-width: 1024px)
+    flex-wrap: nowrap
+    padding: 40px 60px
+
+  @media(min-width: 1900px)
+    margin-top: 120px
+    margin-bottom: 120px
+
+  &__title
+    margin-top: 0
+    margin-bottom: 25px
+
+    text-transform: uppercase
+    text-align: center
+
+    @media(min-width: 768px)
+      width: 100%
+
+    @media(min-width: 1024px)
+      margin-bottom: 0
+      margin-right: 40px
+      max-width: 555px
+      text-align: left
+      width: auto
+
+  ul
+    font-weight: 500
+    margin-bottom: 25px
+
+    @media(min-width: 768px)
+      min-width: 305px
+      margin-bottom: 0
+      margin-right: 40px
+
+    @media(min-width: 1900px)
+      font-size: 18px
+
+    li
+      &:not(:last-child)
+        margin-bottom: 5px
+
+  .button
+    width: 100%
+
+    @media(min-width: 768px)
+      width: auto
+
+    @media(min-width: 1200px)
+      min-width: 250px

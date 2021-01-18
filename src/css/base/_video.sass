@@ -1,0 +1,42 @@
+.video
+  display: block
+  overflow: hidden
+  position: relative
+
+  &:hover,
+  &:focus
+    img
+      transform: scale(1.02)
+
+  img
+    transform: scale(1)
+    transition: transform 0.3s
+
+  &::before
+    background-color: rgba(#000, 0.5)
+    bottom: 0
+    content: ''
+    left: 0
+    position: absolute
+    right: 0
+    top: 0
+    z-index: 1
+
+  &::after
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cpath fill='%23ffffff' d='M51.213 8.787A30 30 0 0 0 8.787 51.213 30 30 0 0 0 51.213 8.787zM30 56.289A26.289 26.289 0 1 1 56.289 30 26.318 26.318 0 0 1 30 56.289z'/%3E%3Cpath fill='%23ffffff' d='M181.062 171.7l20.15-11.638-20.15-11.638z' transform='translate(-158.663 -130.063)'/%3E%3C/svg%3E")
+    background-position: 0 0
+    background-repeat: no-repeat
+    background-size: 34px 34px
+    content: ''
+    height: 34px
+    left: 50%
+    position: absolute
+    top: 50%
+    transform: translate(-50%, -50%)
+    width: 34px
+    z-index: 2
+
+    @media(min-width: 1200px)
+      background-size: 60px 60px
+      height: 60px
+      width: 60px

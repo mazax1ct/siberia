@@ -1,24 +1,13 @@
 .reviews
-  margin-bottom: 60px
+  &:not(:last-child)
+    margin-bottom: 60px
 
-  @media(min-width: 1900px)
-    margin-bottom: 90px
-
-  h2
-    text-transform: uppercase
-
-  &__text
-    margin-left: auto
-    margin-right: auto
-    margin-bottom: 25px
-    max-width: 1070px
-    text-align: center
-
-    @media(min-width: 1200px)
-      margin-bottom: 60px
+    @media(min-width: 1900px)
+      margin-bottom: 90px
 
   &__container
     @media(min-width: 768px)
+      align-items: center
       display: flex
 
   &__nav
@@ -111,7 +100,7 @@
       background-color: transparent
       color: $text-color
       cursor: pointer
-      font-weight: 400
+      font-weight: 500
 
     @media(min-width: 1900px)
       font-size: 18px

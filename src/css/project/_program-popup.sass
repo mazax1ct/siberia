@@ -1,0 +1,84 @@
+.program-popup
+  background-color: #fff
+  font-size: 14px
+  display: none
+  max-width: 950px
+  width: 100%
+
+  &.fancybox-content
+    padding: 60px 20px
+
+    @media(min-width: 768px)
+      padding: 60px
+
+    @media(min-width: 1200px)
+      padding: 100px
+
+  &__title
+    font-size: 18px
+    font-weight: 700
+    line-height: 1.44444
+    margin-bottom: 30px
+    text-transform: uppercase
+
+    @media(min-width: 768px)
+      font-size: 22px
+      text-align: center
+
+  &__text
+    font-weight: 500
+    margin-bottom: 30px
+
+    @media(min-width: 768px)
+      margin-bottom: 50px
+      text-align: center
+
+.program-list
+  list-style: none
+  margin: 0 0 -30px
+  padding: 0
+
+  @media(min-width: 768px)
+    display: flex
+    flex-wrap: wrap
+    margin-left: -15px
+    margin-right: -15px
+
+  &__item
+    margin-bottom: 20px
+
+    @media(min-width: 768px)
+      margin-bottom: 30px
+      padding-left: 15px
+      padding-right: 15px
+      width: 33.33333%
+
+.program-item
+  align-items: center
+  display: flex
+  font-size: 12px
+  font-weight: 600
+  text-transform: uppercase
+
+  @media(min-width: 768px)
+    flex-direction: column
+    text-align: center
+
+  &__icon
+    min-width: 30px
+    margin-right: 15px
+
+    @media(min-width: 768px)
+      height: 38px
+      margin-right: 0
+      margin-bottom: 15px
+      width: 38px
+
+    svg
+      fill: $text-color
+      height: 30px
+      width: 30px
+
+      @media(min-width: 768px)
+        height: 38px
+        width: 38px

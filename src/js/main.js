@@ -86,4 +86,9 @@ $(document).ready(function () {
 		var $p = $(this).closest('.select-wrapper');
 		$p.removeClass('open');
 	});
+
+  //выбор даты
+  $('.js-datepicker').datepicker({
+    position: 'top left'
+  });
 });
