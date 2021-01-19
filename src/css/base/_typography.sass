@@ -118,6 +118,9 @@ table
   th,
   td
     border: none
+    vertical-align: top
+
+  td
     padding: 15px 40px 15px 0
     vertical-align: top
 
@@ -125,6 +128,15 @@ table
       padding-top: 30px
       padding-bottom: 30px
 
+  th
+    padding: 15px 40px 15px 0
+
+    @media(min-width: 1200px)
+      padding-top: 0
+      padding-bottom: 30px
+
+  th,
+  td
     &:last-child
       padding-right: 0
 
