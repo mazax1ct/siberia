@@ -1,0 +1,45 @@
+.sort-view
+  align-items: center
+  display: flex
+  margin-bottom: 20px
+
+  @media(min-width: 1900px)
+    margin-bottom: 50px
+
+.sorting
+  align-items: center
+  display: flex
+  flex-wrap: wrap
+
+  &__title
+    font-weight: 600
+    margin-right: 10px
+    margin-bottom: 0
+
+.views
+  display: none
+  margin-left: auto
+
+  @media(min-width: 768px)
+    align-items: center
+    display: flex
+
+  &__button
+    background-color: transparent
+    border: none
+    cursor: pointer
+    height: 35px
+    padding: 0
+    width: 35px
+
+    &:not(:last-child)
+      margin-right: 15px
+
+    &.is-active
+      svg
+        fill: $text-color
+
+    svg
+      fill: #bcbdc1
+      height: 35px
+      width: 35px
