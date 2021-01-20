@@ -2,11 +2,20 @@
   margin-bottom: 10px
 
   &__opener
+    align-items: center
+    display: flex
+    justify-content: center
     margin-bottom: 15px
     width: 100%
 
     @media(min-width: 1024px)
       display: none
+
+    svg
+      fill: $text-color
+      height: 18px
+      margin-right: 15px
+      width: 18px
 
   &__popup
     background-color: #fff

@@ -157,12 +157,68 @@ img
 .nowrap
   white-space: nowrap
 
-ol,
 ul
   &:not([class])
     list-style: none
-    margin: 0
     padding: 0
+    margin-top: 0
+    margin-bottom: 20px
+
+    &:last-child
+      margin-bottom: 0
+
+ul
+  &:not([class])
+    li
+      padding-left: 20px
+      position: relative
+
+      &:not(:last-child)
+        margin-bottom: 10px
+
+      &::before
+        background-color: $text-color
+        content: ''
+        height: 5px
+        left: 0
+        position: absolute
+        top: 10px
+        width: 5px
+
+        @media(min-width: 1900px)
+          height: 7px
+          top: 11px
+          width: 7px
+
+ol
+  &:not([class])
+    list-style-position: inside
+    padding: 0
+    margin-top: 0
+    margin-bottom: 20px
+
+    &:last-child
+      margin-bottom: 0
+
+    li
+      &::marker
+        font-weight: 600
+
+      &:not(:last-child)
+        margin-bottom: 20px
+
+.no-styled
+  list-style: none
+  padding: 0
+  margin-top: 0
+  margin-bottom: 20px
+
+  &:last-child
+    margin-bottom: 0
+
+  li
+    &:not(:last-child)
+      margin-bottom: 10px
 
 .attention
   border-left: 10px solid #f5d07a
@@ -186,3 +242,19 @@ ul
   @media(min-width: 1900px)
     font-size: 14px
     line-height: 1.57142
+
+.download-link
+  align-items: center
+  display: inline-flex
+  text-decoration: none
+  vertical-align: top
+
+  &:hover,
+  &:focus
+    text-decoration: underline
+
+  svg
+    fill: $text-color
+    height: 20px
+    margin-right: 15px
+    width: 20px
