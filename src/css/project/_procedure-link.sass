@@ -1,0 +1,35 @@
+.procedure-link
+  border: 1px solid $grey-color
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  padding: 20px 25px
+  text-decoration: none
+  transition: border-color 0.3s
+
+  &:hover,
+  &:focus
+    border-color: $text-color
+
+  &__title,
+  &__price,
+  &__link
+    display: block
+    margin-top: 5px
+    margin-bottom: 5px
+
+  &__title
+    font-weight: 700
+    margin-right: auto
+
+  &__price
+    margin-right: 20px
+
+    @media(min-width: 1200px)
+      margin-right: 60px
+
+    @media(min-width: 1900px)
+      margin-right: 190px
+
+  &__link
+    text-decoration: underline

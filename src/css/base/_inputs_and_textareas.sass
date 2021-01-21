@@ -1,29 +1,45 @@
+.label
+  display: block
+  position: relative
+
+  &__text
+    font-size: 14px
+    font-weight: 400
+    line-height: 18px
+    position: absolute
+    z-index: 2
+    top: 15px
+    left: 15px
+    color: #929292
+
 .input,
 .textarea
   background-color: #fff
-  border: 1px solid #ceced0
-  border-radius: 5px
-  color: inherit
+  border: 1px solid $grey-color
+  border-radius: 0
+  color: $text-color
+  font-size: 16px
+  font-weight: 600
+  line-height: 19px
+  transition: border-color 0.3s
   width: 100%
 
   &:focus
-    border-color: #303032
-    box-shadow: 0 0 5px 2px #00d123
+    border-color: $text-color
 
   &.error
     border-color: #ff0000
 
     &:focus
       border-color: #ff0000
-      box-shadow: 0 0 5px 2px #ff0000
 
   &:disabled
     opacity: 0.5
 
 .input
-  height: 50px
-  line-height: 50px
-  padding: 0 10px
+  border: 1px solid $grey-color
+  height: 75px
+  padding: 43px 48px 10px 15px
 
 .textarea
   height: 100px
@@ -32,15 +48,15 @@
 
 /*placeholder*/
 .input::-webkit-input-placeholder
-  color: #303032
+  color: $grey-color
   opacity: 1
 
 .input::-moz-placeholder
-  color: #303032
+  color: $grey-color
   opacity: 1
 
 .input:-ms-input-placeholder
-  color: #303032
+  color: $grey-color
   opacity: 1
 
 .textarea::-webkit-input-placeholder
