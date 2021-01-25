@@ -5,11 +5,7 @@
   justify-content: space-between
   padding: 20px 25px
   text-decoration: none
-  transition: border-color 0.3s
-
-  &:hover,
-  &:focus
-    border-color: $text-color
+  transition: border-color 0.3s, background-color 0.3s
 
   &__title,
   &__price,
@@ -31,5 +27,16 @@
     @media(min-width: 1900px)
       margin-right: 190px
 
+    &:last-child
+      @media(min-width: 1900px)
+        margin-right: 60px
+
   &__link
     text-decoration: underline
+
+a
+  &.procedure-link
+    &:hover,
+    &:focus
+      background-color: $light-grey-color
+      border-color: $light-grey-color

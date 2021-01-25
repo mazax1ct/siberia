@@ -11,8 +11,52 @@
 
   &__item
     margin-bottom: 25px
-    
+
     @media(min-width: 768px)
       padding-left: 15px
       padding-right: 15px
       width: 33.33333%
+
+.doctor
+  display: block
+  text-decoration: none
+
+  &__image
+    display: block
+    margin-bottom: 15px
+
+    @media(min-width: 1900px)
+      margin-bottom: 25px
+
+    img
+      display: block
+      width: 100%
+
+  &__name
+    display: block
+    font-size: 16px
+    font-weight: 600
+    margin-bottom: 10px
+
+    @media(min-width: 1900px)
+      font-size: 18px
+
+  &__position
+    align-items: center
+    display: flex
+    font-weight: 500
+
+    svg
+      align-self: flex-start
+      fill: $text-color
+      height: 20px
+      margin-right: 10px
+      min-width: 20px
+      width: 20px
+
+a
+  &.doctor
+    &:hover,
+    &:focus
+      .doctor__name
+        text-decoration: underline
