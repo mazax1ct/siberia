@@ -23,6 +23,12 @@
     width: 3000px
     z-index: -1
 
+  &:not(:last-child)
+    margin-bottom: 60px
+
+    @media(min-width: 1900px)
+      margin-bottom: 120px
+
   &__text
     font-size: 16px
     font-weight: 500

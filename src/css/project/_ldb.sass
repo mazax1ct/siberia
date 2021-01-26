@@ -1,0 +1,137 @@
+.ldb
+  @media(min-width: 1024px)
+    display: flex
+
+  &__left
+    margin-bottom: 25px
+
+    @media(min-width: 1024px)
+      margin-bottom: 0
+      min-width: 300px
+      width: 300px
+
+    @media(min-width: 1200px)
+      min-width: 400px
+      width: 400px
+
+    @media(min-width: 1900px)
+      min-width: 490px
+      width: 490px
+
+  &__right
+    @media(min-width: 1024px)
+      flex-grow: 1
+      padding-left: 30px
+
+  &__nav
+    padding-left: 20px
+    padding-right: 20px
+
+    @media(min-width: 1024px)
+      padding-left: 0
+      padding-right: 0
+
+    .slick-track
+      display: flex
+
+      .slick-slide
+        display: flex
+        height: auto
+
+  &__nav-item
+    &:not(:last-child)
+      @media(min-width: 1024px)
+        margin-bottom: 10px
+
+    &.slick-current
+      .ldb__nav-button
+        background-color: $text-color
+        border-color: $text-color
+        color: #fff
+
+  &__nav-button
+    background-color: transparent
+    border: 1px solid $grey-color
+    border-radius: 0
+    color: $text-color
+    cursor: pointer
+    display: inline-block
+    font-family: 'Montserrat', Arial, sans-serif
+    font-size: 14px
+    font-weight: 500
+    line-height: 1.28571
+    letter-spacing: 0.35px
+    min-height: 50px
+    padding: 15px 22px
+    text-decoration: none
+    text-align: center
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s
+    vertical-align: middle
+    width: 100%
+
+    @media(min-width: 1024px)
+      text-align: left
+
+    @media(min-width: 1900px)
+      font-size: 16px
+      min-height: 60px
+
+    &:hover,
+    &:focus
+      border-color: $text-color
+
+    &.is-active
+      background-color: $text-color
+      border-color: $text-color
+      color: #fff
+
+  &__slide
+    @media(min-width: 1024px)
+      display: none
+
+    &.is-active
+      @media(min-width: 1024px)
+        display: block
+
+  &__item
+    @media(min-width: 768px)
+      align-items: center
+      border: 1px solid $grey-color
+      display: flex
+      padding: 15px 20px
+
+    @media(min-width: 1200px)
+      padding: 25px
+
+    @media(min-width: 1900px)
+      font-size: 14px
+      line-height: 1.57142
+
+    &:not(:first-child)
+      border-top: none
+
+    &:not(:last-child)
+      margin-bottom: 20px
+
+      @media(min-width: 768px)
+        margin-bottom: 0
+
+  &__item-info
+    margin-bottom: 15px
+
+    @media(min-width: 768px)
+      flex-grow: 1
+      margin-bottom: 0
+      padding-right: 30px
+
+  &__item-title
+    font-weight: 700
+    margin-bottom: 5px
+
+  &__link
+    max-width: 335px
+    width: 100%
+
+    @media(min-width: 768px)
+      min-width: 200px
+      width: 200px

@@ -1,0 +1,77 @@
+.about
+  @media(min-width: 1024px)
+    display: flex
+
+  &__left
+    margin-bottom: 40px
+
+    @media(min-width: 1024px)
+      margin-bottom: 0
+      min-width: 400px
+      width: 400px
+
+    @media(min-width: 1200px)
+      min-width: 500px
+      width: 500px
+
+    @media(min-width: 1900px)
+      min-width: 620px
+      width: 620px
+
+  &__right
+    @media(min-width: 1024px)
+      display: flex
+      flex-direction: column
+      flex-grow: 1
+      padding-left: 30px
+
+    @media(min-width: 1900px)
+      padding-left: 50px
+
+    ul
+      margin-top: auto
+
+  &__doctor
+    position: relative
+
+  &__doctor-image
+    display: block
+    margin-bottom: 15px
+
+    @media(min-width: 1200px)
+      margin-bottom: 0
+
+    img
+      display: block
+      width: 100%
+
+  &__doctor-info
+    @media(min-width: 1200px)
+      background-color: #fff
+      bottom: 0
+      left: 0
+      max-width: 415px
+      position: absolute
+      padding: 15px 30px
+      top: auto
+      width: 100%
+      z-index: 1
+
+  &__doctor-name
+    font-size: 16px
+    font-weight: 600
+    margin-bottom: 5px
+
+    @media(min-width: 1200px)
+      font-size: 18px
+
+  &__doctor-position
+    align-items: center
+    display: flex
+
+    svg
+      fill: $text-color
+      height: 18px
+      min-width: 18px
+      margin-right: 10px
+      width: 18px

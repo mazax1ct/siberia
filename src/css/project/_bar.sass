@@ -1,0 +1,47 @@
+.bar-info
+  @media(min-width: 1024px)
+    display: flex
+
+  &__image
+    margin-bottom: 30px
+
+    @media(min-width: 1024px)
+      margin-bottom: 0
+      min-width: 500px
+      width: 500px
+
+    @media(min-width: 1400px)
+      min-width: 600px
+      width: 600px
+
+    @media(min-width: 1900px)
+      min-width: 830px
+      width: 830px
+
+  &__text
+    @media(min-width: 1024px)
+      display: flex
+      flex-direction: column
+      flex-grow: 1
+      padding-left: 30px
+
+    @media(min-width: 1900px)
+      padding-left: 50px
+
+    .iconed-list
+      font-weight: 600
+      margin-top: auto
+      text-transform: uppercase
+
+      @media(min-width: 1900px)
+        font-size: 14px
+
+      li
+        &:last-child
+          margin-bottom: 0
+
+    .iconed-item
+      svg
+        height: 36px
+        min-width: 36px
+        width: 36px
