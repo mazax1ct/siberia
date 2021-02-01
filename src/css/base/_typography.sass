@@ -17,15 +17,17 @@ body
 a
   color: $text-color
 
-h1,.h1
+h1, .h1
   font-size: 22px
   font-weight: 700
   line-height: 1.54545
   letter-spacing: 0.55px
   margin-bottom: 20px
   margin-top: 0
+  text-transform: uppercase
 
   @media(min-width: 1200px)
+    font-size: 28px
     margin-bottom: 30px
 
   @media(min-width: 1900px)
@@ -33,18 +35,19 @@ h1,.h1
     line-height: 1.22222
     letter-spacing: 0.9px
 
-
-h2,.h2
+h2, .h2
   font-size: 22px
+  font-weight: 700
   line-height: 1.44444
   margin-top: 0
+  margin-bottom: 0
 
   @media(min-width: 1900px)
     font-size: 30px
 
 .main-page
   .page-section
-    h2,.h2
+    h2, .h2
       font-size: 22px
       font-weight: 700
       line-height: 1.54545
@@ -61,12 +64,10 @@ h2,.h2
 
 h3, .h3
   font-size: 18px
-  margin-bottom: 20px
   margin-top: 0
 
   @media(min-width: 1900px)
     font-size: 24px
-    margin-bottom: 35px
 
   &:not(:first-child)
     margin-top: 40px
@@ -74,8 +75,14 @@ h3, .h3
     @media(min-width: 1900px)
       margin-top: 55px
 
+  &:not(:last-child)
+    margin-bottom: 20px
+
+    @media(min-width: 1900px)
+      margin-bottom: 35px
+
 .two-column-block
-   h3,.h3
+   h3, .h3
      font-weight: 700
      margin-bottom: 15px
      text-transform: uppercase
@@ -330,6 +337,12 @@ ol
   @media(min-width: 1900px)
     font-size: 14px
     line-height: 1.57142
+
+  &:first-child
+    margin-top: 0
+
+  &:last-child
+    margin-bottom: 0
 
 .small-text
   @media(min-width: 1900px)

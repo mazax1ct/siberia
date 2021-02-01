@@ -88,10 +88,12 @@
         margin-bottom: 0
 
 .staff
+  display: block
   font-weight: 500
   max-width: 490px
   margin-left: auto
   margin-right: auto
+  text-decoration: none
 
   @media(min-width: 768px) and (max-width: 1199px)
     font-size: 12px
@@ -129,3 +131,20 @@
   &__experience
     @media(min-width: 1200px)
       margin-bottom: 30px
+
+a.staff
+  &:hover,
+  &:focus
+    .staff__image
+      transform: scale(1.02)
+
+  .staff__name
+    text-decoration: underline
+
+  picture
+    display: block
+    overflow: hidden
+
+  .staff__image
+    transform: scale(1)
+    transition: transform 0.3s

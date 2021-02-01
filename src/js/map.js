@@ -9,8 +9,8 @@ window.addEventListener("load", function() {
 
 function initContactsMap() {
   var pointLatLng = {
-    lat: 57.152985,
-    lng: 65.541227
+    lat: 56.957116,
+    lng: 65.468598
   };
 
   var stylesArray = [
@@ -81,7 +81,7 @@ function initContactsMap() {
   ];
 
   var map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 10,
+    zoom: 14,
     center: pointLatLng,
     scrollwheel: false,
     zoomControl: false,

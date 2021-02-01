@@ -57,21 +57,24 @@ body
     @media(min-width: 1900px)
       margin-bottom: 120px
 
-  h2
+  h2, .h2
     margin-top: 0
-    margin-bottom: 20px
     text-transform: uppercase
 
-    @media(min-width: 1200px)
-      margin-bottom: 40px
+    &:not(:last-child)
+      margin-bottom: 20px
 
-    @media(min-width: 1900px)
-      margin-bottom: 50px
+      @media(min-width: 1200px)
+        margin-bottom: 40px
+
+      @media(min-width: 1900px)
+        margin-bottom: 50px
 
   .two-columns
     h2
-      @media(min-width: 1900px)
-        margin-bottom: 40px
+      &:not(:last-child)
+        @media(min-width: 1900px)
+          margin-bottom: 40px
 
   &__text
     margin-left: auto
