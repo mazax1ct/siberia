@@ -40,10 +40,18 @@ h2, .h2
   font-weight: 700
   line-height: 1.44444
   margin-top: 0
-  margin-bottom: 0
 
   @media(min-width: 1900px)
     font-size: 30px
+
+  &:not(:last-child)
+    margin-bottom: 20px
+
+    @media(min-width: 1200px)
+      margin-bottom: 40px
+
+    @media(min-width: 1900px)
+      margin-bottom: 50px
 
 .main-page
   .page-section
@@ -52,7 +60,6 @@ h2, .h2
       font-weight: 700
       line-height: 1.54545
       letter-spacing: 0.55px
-      margin-bottom: 20px
 
       @media(min-width: 1200px)
         margin-bottom: 60px
@@ -61,6 +68,25 @@ h2, .h2
         font-size: 36px
         line-height: 1.22222
         letter-spacing: 0.9px
+        margin-bottom: 60px
+
+.two-columns
+  h2, .h2
+    &:not(:last-child)
+      @media(min-width: 1900px)
+        margin-bottom: 40px
+
+  h3,.h3
+    font-weight: 700
+    margin-bottom: 15px
+    text-transform: uppercase
+
+    @media(min-width: 1900px)
+      font-size: 18px
+
+    &:not(:last-child)
+      @media(min-width: 1900px)
+        margin-bottom: 25px
 
 h3, .h3
   font-size: 18px
