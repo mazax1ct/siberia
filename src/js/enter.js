@@ -13,7 +13,7 @@ window.addEventListener("load", function() {
     source_1.src = "http://vsignal.ru/video/siberia.mp4";
     var source_2 = document.createElement("source");
     source_2.type = "video/webm";
-    source_2.src = "https://profildoors.center/video/video.webm";
+    source_2.src = "http://vsignal.ru/video/siberia.mp4";
     video.appendChild(source_1);
     video.appendChild(source_2);
     container.appendChild(video);
