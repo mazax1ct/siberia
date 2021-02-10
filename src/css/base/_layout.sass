@@ -164,3 +164,38 @@ body
 
   img
     margin-bottom: 0
+
+.tiles-list
+  list-style: none
+  margin: 0
+  padding: 0
+
+  @media(min-width: 600px)
+    display: flex
+    flex-wrap: wrap
+    margin-left: -15px
+    margin-right: -15px
+    margin-bottom: -30px
+
+  &--type_2
+    .tiles-list__item
+      @media(min-width: 1200px)
+        width: 25%
+
+  &:last-child
+    margin-bottom: -20px
+
+    @media(min-width: 600px)
+      margin-bottom: -30px
+
+  &__item
+    margin-bottom: 20px
+
+    @media(min-width: 600px)
+      margin-bottom: 30px
+      padding-left: 15px
+      padding-right: 15px
+      width: 50%
+
+    @media(min-width: 768px)
+      width: 33.33333%

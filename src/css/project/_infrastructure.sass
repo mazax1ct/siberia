@@ -1,0 +1,80 @@
+.infrastructure-filter
+  margin-bottom: 20px
+
+  @media(min-width: 1200px)
+    margin-bottom: 40px
+
+  .select-wrapper
+    max-width: 360px
+
+.infrastructure-list
+  margin-bottom: 50px
+
+  @media(min-width: 1200px)
+    margin-bottom: 100px
+
+  @media(min-width: 1900px)
+    margin-bottom: 160px
+
+  .slick-list
+    min-width: 100%
+
+  .slick-track
+    display: flex
+    margin-left: 0
+    margin-right: 0
+    min-width: 100%
+
+  .slick-initialized
+    &:last-child
+      margin-bottom: 30px
+
+    .slick-slide
+      display: flex
+      height: auto
+
+.object
+  display: flex
+  flex-direction: column
+  height: 100%
+  margin-left: auto
+  margin-right: auto
+  max-width: 360px
+
+  &__image
+    display: block
+    margin-bottom: 15px
+
+  &__title
+    font-size: 16px
+    font-weight: 700
+    line-height: 1.375
+    margin-bottom: 10px
+
+  &__text
+    font-size: 14px
+    line-height: 1.57142
+    margin-bottom: 15px
+
+  &__buttons
+    display: flex
+    margin-left: -5px
+    margin-right: -5px
+    margin-top: auto
+
+    .button
+      font-size: 12px
+      min-height: 46px
+      margin-left: 5px
+      margin-right: 5px
+      padding: 10px 22px
+      width: calc(50% - 10px)
+
+.infrastructure-map
+  background-color: $grey-color
+  height: 690px
+  margin-bottom: 60px
+
+  @media(min-width: 1900px)
+    height: 790px
+    margin-bottom: 120px
