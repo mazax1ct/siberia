@@ -1,0 +1,146 @@
+.faq
+  margin-bottom: 60px
+
+  @media(min-width: 768px)
+    display: flex
+
+  @media(min-width: 1200px)
+    margin-bottom: 120px
+
+  &__left
+    @media(min-width: 768px)
+      min-width: 260px
+      width: 260px
+
+    @media(min-width: 1024px)
+      min-width: 300px
+      width: 300px
+
+    @media(min-width: 1200px)
+      min-width: 360px
+      width: 360px
+
+  &__right
+    @media(min-width: 768px)
+      flex-grow: 1
+      padding-left: 30px
+
+    @media(min-width: 1200px)
+      padding-left: 50px
+
+  &__nav
+    padding-left: 20px
+    padding-right: 20px
+
+    @media(min-width: 768px)
+      padding-left: 0
+      padding-right: 0
+
+    .slick-track
+      display: flex
+
+      .slick-slide
+        display: flex
+        height: auto
+
+  &__nav-item
+    &:not(:last-child)
+      @media(min-width: 768px)
+        margin-bottom: 10px
+
+    &.slick-current
+      .faq__nav-button
+        background-color: $text-color
+        border-color: $text-color
+        color: #fff
+
+  &__nav-button
+    background-color: transparent
+    border: 1px solid $grey-color
+    border-radius: 0
+    color: $text-color
+    cursor: pointer
+    display: inline-block
+    font-family: 'Montserrat', Arial, sans-serif
+    font-size: 14px
+    font-weight: 500
+    line-height: 1.28571
+    letter-spacing: 0.35px
+    min-height: 50px
+    padding: 15px 22px
+    text-decoration: none
+    text-align: center
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s
+    vertical-align: middle
+    width: 100%
+
+    @media(min-width: 768px)
+      text-align: left
+
+    @media(min-width: 1900px)
+      font-size: 16px
+      min-height: 60px
+
+    &:hover,
+    &:focus
+      border-color: $main-color
+
+    &.is-active
+      background-color: $main-color
+      border-color: $main-color
+      color: #fff
+
+  &__slide
+    @media(min-width: 768px)
+      display: none
+
+    &.is-active
+      @media(min-width: 768px)
+        display: block
+
+  &__item
+    border-top: 1px solid $grey-color
+
+    &:first-child
+      border-top: none
+
+      @media(min-width: 768px)
+        border-top: 1px solid $grey-color
+
+    &:last-child
+      border-bottom: 1px solid $grey-color
+
+  &__item-info
+    margin-bottom: 15px
+
+    @media(min-width: 768px)
+      flex-grow: 1
+      margin-bottom: 0
+      padding-right: 30px
+
+  &__item-title
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23212126' width='16' height='16' viewBox='0 0 16 16'%3E%3Cg transform='translate(-1707 -377.95)'%3E%3Crect width='16' height='2' rx='1' transform='translate(1707 384.95)'/%3E%3Crect width='15.95' height='2' rx='1' transform='rotate(-90 1053.95 -660.05)'/%3E%3C/g%3E%3C/svg%3E%0A")
+    background-repeat: no-repeat
+    background-position: 100% 50%
+    cursor: pointer
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+    margin-bottom: 0
+    padding-top: 20px
+    padding-bottom: 20px
+    padding-right: 36px
+
+    @media(min-width: 1900px)
+      padding-top: 30px
+      padding-bottom: 30px
+
+    &.is-active
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='15.95' viewBox='0 0 16 15.95'%3E%3Cg transform='translate(-1707 -378)'%3E%3Crect width='16' height='2' fill='%23212126' rx='1' transform='translate(1707 384.95)'/%3E%3C/g%3E%3C/svg%3E%0A")
+
+  &__item-text
+    display: none
+    padding-bottom: 20px
+
+    @media(min-width: 1900px)
+      padding-bottom: 30px
