@@ -11,16 +11,18 @@
     margin-right: -10px
 
   &__link
+    background-color: $main-color
     height: 30px
     margin-left: 10px
     margin-right: 10px
+    transition: background-color 0.3s
     width: 30px
-
-    img
-      transform: scale(1)
-      transition: transform 0.3s
 
     &:hover,
     &:focus
-      img
-        transform: scale(1.15)
+      background-color: darken($main-color, 10%)
+
+  &__link-icon
+    fill: #fff
+    height: 30px
+    width: 30px
